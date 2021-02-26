@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <?php
-        header("Location: ./greedyspaghetti-site/menu.php");
+        header("Location: menu.php");
         exit();
     ?>
 </html>

@@ -1,3 +1,9 @@
+:root {
+    --purple : rgb(105, 0, 153);
+    --pink-dark : rgb(173, 0, 121);
+    --red-dark : rgb(124, 1, 38);
+}
+
 body {
     background-color: black;
     color: white;
@@ -8,7 +14,7 @@ body {
 
 header {
     text-align: center;
-    background-color: rgb(105, 0, 153);
+    background-color: var(--purple);
     color: white;
     border-color: white;
     border-style: solid;
@@ -16,6 +22,7 @@ header {
     border-width: 15px;
     margin-left: 40px;
     margin-right: 40px;
+    margin-top: 10px;
 }
 
 main {
@@ -29,6 +36,7 @@ footer {
     bottom: 10px;
     width: 100%;
     text-align: center;
+    background-color: black;
 }
 
 p {
@@ -46,6 +54,9 @@ h2 {
     font-style: normal;
 }
 
+a {
+    color: aquamarine;
+}
 
 img {
     border-style: solid;
@@ -73,9 +84,9 @@ img {
     font-size: 25px;
 }
 
-.app {
-    display: inline-table;
-    width: 45%;
+.block {
+    
+    width: 96%;
     border-radius: 40px;
     border-style: solid;
     border-color: white;
@@ -84,6 +95,10 @@ img {
     text-align: center;   
 }
 
-.wrapper {
-    overflow: hidden;
+table {
+    width: 100%;
+}
+
+td {
+    align-items: center;
 }

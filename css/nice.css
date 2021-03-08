@@ -2,13 +2,14 @@
     --purple : rgb(105, 0, 153);
     --pink-dark : rgb(173, 0, 121);
     --red-dark : rgb(124, 1, 38);
+    --blue : rgb(66, 0, 221);
 }
 
 body {
     background-color: black;
     color: white;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
     font-family: "Roboto";
 }
 
@@ -20,28 +21,25 @@ header {
     border-style: solid;
     border-radius: 40px;
     border-width: 15px;
-    margin-left: 40px;
-    margin-right: 40px;
     margin-top: 10px;
 }
 
 main {
-    margin-left: 40px;
-    margin-right: 40px;
+    background-color: black;
 }
 
 footer {
-    font-size: 12px;
+    font-size: 15px;
     position: fixed;
-    bottom: 10px;
+    bottom: 0;
+    padding: 0.2%;
     width: 100%;
-    text-align: center;
+    text-align: center;    ;
     background-color: black;
 }
 
 p {
-    margin-left: 20px;
-    font-size: large;
+    font-size: 20px;
 }
 
 h1 {
@@ -55,7 +53,7 @@ h2 {
 }
 
 a {
-    color: aquamarine;
+    color: aqua;
 }
 
 img {
@@ -65,10 +63,21 @@ img {
     border-radius: 15px;
 }
 
+button {
+    border-style: solid;
+    border-color: white;
+    border-width: 10px;
+    border-radius: 25px;
+    color: white;
+    font-size: 25px;
+    padding: 10px 10px;
+    background: none;
+}
+
+
 .menu {
     font-size: 18px;
     font-family: "Roboto";
-    margin-left: -40px;
 }
 
 .menu li {
@@ -85,8 +94,6 @@ img {
 }
 
 .block {
-    
-    width: 96%;
     border-radius: 40px;
     border-style: solid;
     border-color: white;
@@ -95,10 +102,10 @@ img {
     text-align: center;   
 }
 
-table {
-    width: 100%;
+.block.first {
+    background-color: var(--pink-dark);
 }
 
-td {
-    align-items: center;
+.block.second {
+    background-color: var(--red-dark);
 }

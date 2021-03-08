@@ -8,19 +8,14 @@
     </head>
     <body>
         <?php include("header.php"); ?>
-        <main>
-            <div class="block" style="background-color:var(--pink-dark)">
-                <p>
-                    <h2>Email</h2>
-                    samuele@greedyspaghetti.com<br><br>
-                </p>
-            </div>
-            <div class="block" style="background-color:var(--red-dark)">
-                <p>
-                    <h2>Github</h2>
-                    <a href="https://github.com/samuelebompani">here</a><br><br>
-                </p>
-            </div>
-        </main>
+
+        <div class="block first">
+            <h2>Email</h2>
+            <p><a href="mailto:samuele@greedyspaghetti.com">samuele@greedyspaghetti.com</a><br><br></p>
+        </div>
+        <div class="block second">
+            <h2>Github</h2>
+            <p><a href="https://github.com/samuelebompani">Here</a><br><br></p>
+        </div>
     </body>
 </html>

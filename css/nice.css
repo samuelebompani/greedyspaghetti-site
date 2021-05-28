@@ -1,111 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
 :root {
     --purple : rgb(105, 0, 153);
     --pink-dark : rgb(173, 0, 121);
     --red-dark : rgb(124, 1, 38);
     --blue : rgb(66, 0, 221);
+    --blue-dark : rgb(0, 34, 75);
+    --green-dark : rgb(0, 140, 145);
 }
 
 body {
     background-color: black;
     color: white;
-    margin-left: 5%;
-    margin-right: 5%;
-    font-family: "Roboto";
-}
-
-header {
-    text-align: center;
-    background-color: var(--purple);
-    color: white;
-    border-color: white;
-    border-style: solid;
-    border-radius: 40px;
-    border-width: 15px;
-    margin-top: 10px;
-}
-
-main {
-    background-color: black;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", "sans-serif";
 }
 
 footer {
-    font-size: 15px;
-    position: fixed;
+    font-size: 1vw;
+    position: sticky;
     bottom: 0;
     padding: 0.2%;
     width: 100%;
-    text-align: center;    ;
+    text-align: center;
     background-color: black;
 }
 
-p {
-    font-size: 20px;
-}
-
 h1 {
-    font-size: 65px;
+    font-size: 70px;
     font-style: normal;
 }
 
 h2 {
-    font-size: 40px;
+    font-size: 50px;
     font-style: normal;
+}
+
+h3 {
+    font-size: 30px;
 }
 
 a {
     color: aqua;
 }
-
-img {
-    border-style: solid;
-    border-color: white;
-    border-width: 10px;
-    border-radius: 15px;
-}
-
 button {
-    border-style: solid;
-    border-color: white;
-    border-width: 10px;
-    border-radius: 25px;
-    color: white;
-    font-size: 25px;
-    padding: 10px 10px;
-    background: none;
-}
-
-
-.menu {
-    font-size: 18px;
-    font-family: "Roboto";
-}
-
-.menu li {
-    display: inline;
-}
-
-.menu li a {
+    padding: 12px 24px;
     font-weight: bold;
-    text-decoration: none;
-    display: inline;
-    padding: 30px;
-    color: white;
-    font-size: 25px;
+    text-transform: uppercase;
 }
-
-.block {
-    border-radius: 40px;
-    border-style: solid;
-    border-color: white;
-    border-width: 15px;
+/*CLASSES*/
+.navigation {
+    background-color: var(--purple);
+    margin: 0;
+    padding: 20px 50px;
+}
+.main-title {
+    width: 100%;
+    margin: 0;
+}
+.menu-sections {
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+}
+.menu-sections > li {
+    padding: 12px 24px;
+    display: inline-block;
     margin-top: 20px;
-    text-align: center;   
+}
+.menu-sections > li > a {
+    color: white;
+    text-decoration: none;
+}
+.menu-sections > li > a > h3 {
+    margin: 0;
+}
+.block-title {
+    text-align: center;
 }
 
-.block.first {
+.block-first {
     background-color: var(--pink-dark);
 }
 
-.block.second {
+.block-second {
     background-color: var(--red-dark);
+}
+
+.block-third {
+    background-color: var(--blue-dark);
+}
+
+.block-fourth {
+    background-color: var(--green-dark);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%}
+.col-3 {width: 25%}
+.col-4 {width: 33.33%}
+.col-5 {width: 41.66%}
+.col-6 {width: 50%}
+.col-7 {width: 58.33%}
+.col-8 {width: 66.66%}
+.col-9 {width: 75%}
+.col-10 {width: 83.33%}
+.col-11 {width: 91.66%}
+.col-12 {width: 100%}
+
+.row::after {
+    content: '';
+    clear: both;
+    display: table;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 32px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+    [class*="col-"] {
+        width: 100%;
+    }
+    h1 {
+        font-size: 50px;
+    }
+    h2 {
+        font-size: 40px;
+    }
+    h3 {
+        font-size: 20px;
+    }
 }

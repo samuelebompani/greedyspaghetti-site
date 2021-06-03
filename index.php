@@ -2,11 +2,11 @@
 <html>
     <head>
         <title>Greedy Spaghetti</title>
-        <?php include("utils/header.php"); ?>
+        <?php include("utils/header.html"); ?>
         <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <?php include("utils/navigation.php"); ?>
+        <?php include("utils/navigation.html"); ?>
         <div class="main-contents">
             <div class="row">
                 <div class="col-6">

@@ -14,6 +14,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: "Roboto", "sans-serif";
+    font-size: 24px;
 }
 
 footer {
@@ -27,12 +28,12 @@ footer {
 }
 
 h1 {
-    font-size: 70px;
+    font-size: 60px;
     font-style: normal;
 }
 
 h2 {
-    font-size: 50px;
+    font-size: 40px;
     font-style: normal;
 }
 
@@ -47,6 +48,10 @@ button {
     padding: 12px 24px;
     font-weight: bold;
     text-transform: uppercase;
+}
+iframe {
+    width:100%;
+    height:400px;
 }
 /*CLASSES*/
 .navigation {
@@ -81,20 +86,24 @@ button {
     text-align: center;
 }
 
-.block-first {
-    background-color: var(--pink-dark);
+.block {
+    padding: 30px;
+    min-height: 400px;
 }
 
-.block-second {
+.first {
+    background-color: var(--pink-dark);
+    
+}
+
+.second {
     background-color: var(--red-dark);
 }
-
-.block-third {
-    background-color: var(--blue-dark);
+.main-contents {
+    padding: 10px;
 }
-
-.block-fourth {
-    background-color: var(--green-dark);
+.block video {
+    width: 100%;
 }
 
 * {
@@ -122,11 +131,11 @@ button {
 
 [class*="col-"] {
     float: left;
-    padding: 32px;
+    padding: 16px;
     text-align: center;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1000px) {
     [class*="col-"] {
         width: 100%;
     }
@@ -137,6 +146,6 @@ button {
         font-size: 40px;
     }
     h3 {
-        font-size: 20px;
+        font-size: 30px;
     }
 }

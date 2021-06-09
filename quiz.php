@@ -8,34 +8,34 @@
     </head>
     <body>
         <div class="main-contents">
-            <div class="row" style="padding-left:20px;padding-right:20px;">
+            <div class="row" style="padding-left:20px;padding-right:20px;" alt="Euro2020 logo">
                 <img src="media/euro.png" class="col-2 lateral-logo">
                 <div class="col-8" >
                     <h1>Che mascotte degli Europei sei?</h1>
                     <p>Ti sentiresti più a tuo agio nel morbido costume di Berni o tra i tunnel di Skillzy?</p>
                     <p style="font-size:10px;">unofficial Euro quiz</p>
                 </div>
-                <img src="media/euro.png" class="col-2 lateral-logo">
+                <img src="media/euro.png" class="col-2 lateral-logo" alt="Euro2020 logo">
             </div>
             <form action="result.php" method="post">
                 <div class="row">
                     <div class="col-6">
-                        <div class="block first">
+                        <div class="block first question-block">
                             <h3>Come ti definiresti?</h3>
-                            <input type="radio" id="mist" name="def" value="7">
+                            <input type="radio" id="mist" name="def" value="7" class="first" required>
                             <label for="mist">Misterios*</label><br>
                             <input type="radio" id="lucky" name="def" value="5">
                             <label for="lucky">Fortunat*</label><br>
                             <input type="radio" id="simp" name="def" value="2">
-                            <label for="simp">simpatic* ed entusiasta</label><br>
+                            <label for="simp">Simpatic* ed entusiasta</label><br>
                             <input type="radio" id="azione" name="def" value="1">
-                            <label for="azione">pront* all’azione</label><br>
+                            <label for="azione">Pront* all’azione</label><br>
                             <input type="radio" id="skill" name="def" value="10">
                             <label for="skill">Skillat*</label><br>
                         </div>
                     </div>
                     <div class="col-6">
-                        <div class="block second">
+                        <div class="block second question-block">
                             <h3>Canzone preferita:</h3>
                             <input type="radio" id="marshmello" name="canzone" value="9" required>
                             <label for="marshmello">Marshmello – Check this out (Mixed)</label><br>
@@ -52,7 +52,7 @@
                 </div>
                 <div class="row">
                     <div class="col-6">
-                        <div class="block third">
+                        <div class="block third question-block">
                             <h3>Foto di gruppo dopo una grigliata, come ti metti in posa?</h3>
                             <input type="radio" id="sorridi" name="foto" value="3" required>
                             <label for="sorridi">Sorridi educatamente</label><br>
@@ -61,13 +61,13 @@
                             <input type="radio" id="sdraia" name="foto" value="6">
                             <label for="sdraia">Ti sdrai davanti a tutti</label><br>
                             <input type="radio" id="occhiali" name="foto" value="4">
-                            <label for="">Indossi una simpaticissima parrucca colorata</label><br>
+                            <label for="occhiali">Indossi una simpaticissima parrucca colorata</label><br>
                             <input type="radio" id="drone" name="foto" value="10">
                             <label for="drone">Proponi di farla con il tuo nuovo drone</label><br>
                         </div>
                     </div>
                     <div class="col-6">
-                        <div class="block fourth">
+                        <div class="block fourth question-block">
                             <h3>Tre parole per la tua vacanza ideale:</h3>
                             <input type="radio" id="montagna" name="vacanza" value="7" required>
                             <label for="montagna">Montagna, mucche e formaggi</label><br>
@@ -84,7 +84,7 @@
                 </div>
                 <div class="row">
                     <div class="col-6">
-                        <div class="block second">
+                        <div class="block second question-block">
                             <h3>Piatto preferito:</h3>
                             <input type="radio" id="wurst" name="cibo" value="4" required>
                             <label for="wurst">Würstel e crauti</label><br>
@@ -99,7 +99,7 @@
                         </div>
                     </div>
                     <div class="col-6">
-                        <div class="block first">
+                        <div class="block first question-block">
                             <h3>Nome del tuo cane:</h3>
                             <input type="radio" id="andrij" name="cane" value="8" required>
                             <label for="andrij">Andrij</label><br>
@@ -116,7 +116,7 @@
                 </div>
                 <div class="row">
                     <div class="col-6">
-                        <div class="block fourth">
+                        <div class="block fourth question-block">
                             <h3>Hai la 9 sulle spalle, come segni nella finale dell'Europeo?</h3>
                             <input type="radio" id="gre" name="cane" value="0" required>
                             <label for="gre">Su calcio d'angolo, nel mucchio anticipi tutti di testa</label><br>
@@ -131,26 +131,24 @@
                         </div>
                     </div>
                     <div class="col-6">
-                        <div class="block third">
+                        <div class="block third question-block">
                             <h3>Ti vesti elegante: a chi ti ispiri?</h3>
-                            <div class="row">
-                                <input type="radio" id="bon" name="celeb" value="4" required>
-                                <label for="bon">Bon Jovi</label><br>
-                                <input type="radio" id="gaga" name="celeb" value="5">
-                                <label for="gaga">Lady Gaga</label><br>
-                                <input type="radio" id="nadal" name="celeb" value="3">
-                                <label for="nadal">Rafael Nadal</label><br>
-                                <input type="radio" id="stone" name="celeb" value="7">
-                                <label for="stone">Emma Stone</label><br>
-                                <input type="radio" id="lino" name="celeb" value="0">
-                                <label for="lino">Lino Banfi</label><br>
-                            </div>
+                            <input type="radio" id="bon" name="celeb" value="4" required>
+                            <label for="bon">Bon Jovi</label><br>
+                            <input type="radio" id="gaga" name="celeb" value="5">
+                            <label for="gaga">Lady Gaga</label><br>
+                            <input type="radio" id="nadal" name="celeb" value="3">
+                            <label for="nadal">Rafael Nadal</label><br>
+                            <input type="radio" id="stone" name="celeb" value="7">
+                            <label for="stone">Emma Stone</label><br>
+                            <input type="radio" id="lino" name="celeb" value="0">
+                            <label for="lino">Lino Banfi</label><br>
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-6">
-                        <div class="block first">
+                        <div class="block first question-block">
                             <h3>Puoi scegliere il centravanti titolare dell'Italia, chi schieri?</h3>
                             <input type="radio" id="ciro" name="att" value="3" required>
                             <label for="ciro">Ciro Immobile</label><br>
@@ -165,9 +163,9 @@
                         </div>
                     </div>
                     <div class="col-6">
-                        <div class="block second">
+                        <div class="block second question-block">
                             <h3>Film preferito:</h3>
-                            <input type="radio" id="carnage" name="film" value="8" reuqired>
+                            <input type="radio" id="carnage" name="film" value="8" required>
                             <label for="carnage">Carnage</label><br>
                             <input type="radio" id="diavolo" name="film" value="5">
                             <label for="diavolo">L’avvocato del diavolo</label><br>
@@ -182,7 +180,7 @@
                 </div>
                 <div class="row">
                     <div class="col-6">
-                        <div class="block third">
+                        <div class="block third question-block">
                             <h3>Scegli uno sposor tecnico per la tua nazionale:</h3>
                             <input type="radio" id="nike" name="sponsor" value="9" required>
                             <label for="nike">Nike</label><br>
@@ -197,9 +195,9 @@
                         </div>
                     </div>
                     <div class="col-6">
-                        <div class="block fourth">
+                        <div class="block fourth question-block">
                             <h3>Serata in compagnia, cosa bevi?</h3>
-                            <input type="radio" id="birra" name="drink" value="5">
+                            <input type="radio" id="birra" name="drink" value="5" required>
                             <label for="birra">Birra</label><br>
                             <input type="radio" id="vino" name="drink" value="1">
                             <label for="vino">Vino</label><br>
@@ -214,7 +212,7 @@
                 </div>
                 <div class="row">
                     <div class="col-12">
-                        <input type="submit" value="Conferma">
+                        <input type="submit" value="Conferma" id="submit-button">
                     </div>
                 </div>
             </form>

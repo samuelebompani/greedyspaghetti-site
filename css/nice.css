@@ -19,7 +19,6 @@ body {
 
 footer {
     font-size: 1vw;
-    position: sticky;
     bottom: 0;
     padding: 0.2%;
     width: 100%;
@@ -48,16 +47,20 @@ button {
     padding: 12px 24px;
     font-weight: bold;
     text-transform: uppercase;
+    background-color: white;
 }
 iframe {
     width:100%;
     height:400px;
+    margin-bottom: 20px;
 }
 /*CLASSES*/
 .navigation {
     background-color: var(--purple);
     margin: 0;
-    padding: 20px 50px;
+    padding:50px 20px;
+    text-align: center;
+    width: 100%;
 }
 .main-title {
     width: 100%;
@@ -98,6 +101,14 @@ iframe {
 
 .second {
     background-color: var(--red-dark);
+}
+
+.third {
+    background-color: var(--blue-dark);
+}
+
+.fourth {
+    background-color: var(--green-dark);
 }
 .main-contents {
     padding: 10px;
@@ -140,12 +151,21 @@ iframe {
         width: 100%;
     }
     h1 {
-        font-size: 50px;
+        font-size: 70px;
     }
     h2 {
-        font-size: 40px;
+        font-size: 60px;
     }
     h3 {
-        font-size: 30px;
+        font-size: 50px;
+    }
+    p {
+        font-size: 32px;
+    }
+    button {
+        font-size: 32px;
+    }
+    .lateral-logo {
+        display: none;
     }
 }

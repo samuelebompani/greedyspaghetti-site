@@ -1,10 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -13,26 +12,85 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#header {
+  background-color: aquamarine;
+  margin: 0;
+  padding: 0px 50px;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
+  
+}
+
+#menu, #mobile-menu ul {
+  list-style: none;
+}
+
+#menu {
+  display: flex;
+  font-size: 32px;
+}
+
+#mobile-menu {
+  background-color: aquamarine;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding-left: 40px;
+  flex-direction: column;
+  font-size: 64px;
+  z-index: 1;
+  list-style: none;
 }
 
-.App-link {
-  color: #61dafb;
+#menu li {
+  padding: 0px 30px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+#menu li a, #mobile-menu ul li a{
+  color: black;
+  text-decoration: none;
+}
+
+#menu li a:hover, #mobile-menu ul li a:hover {
+  color: purple;
+}
+
+#menu-icon, #menu-btn, #mobile-menu, #label {
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  #menu {
+      display: none;
   }
-  to {
-    transform: rotate(360deg);
+  
+  #menu-icon, #label {
+      display: block;
+  }
+
+  #menu-icon:checked ~ #menu-icon {
+      background-color: transparent;
+  }
+  #menu-icon {
+      position: relative;
+      float: right;
+      display: block;
+      cursor: pointer;
+      font-size: 48px;
+      z-index: 2;
+  }
+  #menu-btn:checked ~ #menu-icon {
+      float: right;
+      display: block;
+      cursor: pointer;
+      font-size: 48px;
+      z-index: 2;
+  }
+  #menu-btn:checked ~ #mobile-menu {
+      display: flex;
   }
 }

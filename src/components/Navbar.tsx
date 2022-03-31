@@ -9,23 +9,21 @@ export default function Navbar(): JSX.Element {
             <div className="text-xl text-black font-bold">
                 Greedy Spaghetti
             </div>
-            <ul className="flex">
-                {navbarItems.map(([i, h]) => {return <NavbarItem name={i} href={h}/>})}
-            </ul>
+            <div className="lg:flex sm:hidden">
+                {navbarItems.map(([i, h]) => {return <div key={i}><NavbarItem name={i} href={h}/></div>})}
+            </div>
             <input type="checkbox" id="menu-btn"/>
-            <label htmlFor="menu-btn" id="label" className="md:block">
+            <label htmlFor="menu-btn"    className="md:block lg:hidden">
                 <span id="menu-icon" className="material-icons">
                     menu
                 </span>
             </label>
-            <nav id="mobile-menu" className="">
-                <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="#">Random</a></li>
-                    <li><a href="#">Videos</a></li>
-                    <li><a href="#">About</a></li>
-                </ul>
-            </nav>
+            
+        </nav>
+        <nav className="bg-purple-700 w-full h-full lg:hidden md:block fixed">
+            <div>
+                {navbarItems.map(([i, h]) => {return <div key={i}><NavbarItem name={i} href={h}/></div>})}
+            </div>
         </nav>
     </>
 }

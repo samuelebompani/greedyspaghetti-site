@@ -6,10 +6,8 @@ import Navbar from './components/Navbar';
 function App() {
   return (
     <div className="App">
-      <head>
-        <link href="/dist/App.css" rel="stylesheet"></link>
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"></link>
-      </head>
+      <link href="/dist/App.css" rel="stylesheet"></link>
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"></link>
       
       <header className="App-header">
         <Navbar></Navbar>

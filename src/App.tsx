@@ -1,15 +1,12 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Navbar from './components/Navbar';
 
 function App() {
   return (
     <div className="App">
-      <link href="/dist/App.css" rel="stylesheet"></link>
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"></link>
       
-      <header className="App-header">
+      <header className="App-header h-screen">
         <Navbar></Navbar>
       </header>
     </div>

@@ -2,24 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-.App {
-  text-align: center;
+html, body, .App, #root {
+  margin: 0;
+  height: 100%;
 }
 
-@media (max-width: 1000px) {
-
-  #menu-icon:checked ~ #menu-icon {
-      background-color: transparent;
-  }
- 
-  #menu-btn:checked ~ #menu-icon {
-      float: right;
-      display: block;
-      cursor: pointer;
-      font-size: 48px;
-      z-index: 2;
-  }
-  #menu-btn:checked ~ #mobile-menu {
-      display: flex;
-  }
+.App {
+  text-align: center;
 }

@@ -10,12 +10,12 @@ export default function HomeRoute(): JSX.Element {
                     "Scopri che mascotte degli europei sei. (Italian only)"
     return <>
         <div className="flex">
-            <Box title="Bip 39" bodyText={bodyBip}/>
-            <Box title="XGs Euro 2020" bodyText={bodyXg}/>
+            <Box title="Bip 39" bodyText={bodyBip} link="" />
+            <Box title="XGs Euro 2020" bodyText={bodyXg} link="" />
         </div>
         <div className="flex">
-            <Box title="Easy Counter" bodyText={bodyEC} />
-            <Box title="Euro Mascotte test" bodyText={bodyEuroT} />
+            <Box title="Easy Counter" bodyText={bodyEC} link="https://play.google.com/store/apps/details?id=com.easy.counter" />
+            <Box title="Euro Mascotte test" bodyText={bodyEuroT} link="" />
         </div>
     </>
 }

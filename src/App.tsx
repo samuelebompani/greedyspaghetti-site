@@ -3,10 +3,11 @@ import Navbar from './components/Navbar';
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import RandomRoute from './routes/Random.route';
 import HomeRoute from './routes/Home.route';
+import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="App bg-primary">
+    <div className="App md:px-12 xl:px-72 min-h-screen grid content-between w-full">
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"></link>
       <Navbar></Navbar>
       <BrowserRouter>
@@ -17,7 +18,7 @@ function App() {
 
         </Routes>
       </BrowserRouter>
-      
+      <Footer text="© 2022 Copyright: Greedy Spaghetti"/>
     </div>
   );
 }

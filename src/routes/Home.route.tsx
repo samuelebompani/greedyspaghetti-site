@@ -1,4 +1,4 @@
-import Box from "../components/Box";
+import Box  from "../components/Box";
 
 export default function HomeRoute(): JSX.Element {
 
@@ -9,13 +9,14 @@ export default function HomeRoute(): JSX.Element {
     const bodyEuroT = "Ti sentiresti più a tuo agio nel morbido costume di Berni o tra i tunnel di Skillzy? "+
                     "Scopri che mascotte degli europei sei. (Italian only)"
     return <>
-        <div className="flex">
-            <Box title="Bip 39" bodyText={bodyBip} link="" />
-            <Box title="XGs Euro 2020" bodyText={bodyXg} link="" />
+        <div className="grid md:grid-cols-2 grid-cols-1">
+            <Box title="Bip 39" body={bodyBip} link=""></Box>
+            <Box title="XGs Euro 2020" body={bodyXg} link="" />
         </div>
-        <div className="flex">
-            <Box title="Easy Counter" bodyText={bodyEC} link="https://play.google.com/store/apps/details?id=com.easy.counter" />
-            <Box title="Euro Mascotte test" bodyText={bodyEuroT} link="" />
+        <div className="grid md:grid-cols-2 grid-cols-1">
+            <Box title="Easy Counter" body={bodyEC} link="https://play.google.com/store/apps/details?id=com.easy.counter" />
+            <Box title="Euro Mascotte test" body={bodyEuroT} link="" />
         </div>
+        
     </>
 }

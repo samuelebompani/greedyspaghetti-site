@@ -15,7 +15,7 @@ export default function HomeRoute(): JSX.Element {
         </div>
         <div className="grid md:grid-cols-2 grid-cols-1">
             <Box title="Easy Counter" body={bodyEC} link="https://play.google.com/store/apps/details?id=com.easy.counter" />
-            <Box title="Euro Mascotte test" body={bodyEuroT} link="" />
+            <Box title="Euro Mascotte test" body={bodyEuroT} link="/euro-mascotte" />
         </div>
         
     </>

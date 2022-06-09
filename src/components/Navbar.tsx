@@ -3,11 +3,11 @@ import NavbarItem from "./NavbarItem";
 
 export default function Navbar(): JSX.Element {
     
-    const navbarItems = [["Home", "/"], ["Random", "/random"], ["Videos", "/videos"], ["About", "/about"]]
+    const navbarItems = [["Home", "/"], ["Random", "/random"], /*["Videos", "/videos"],*/ ["About", "/about"]]
     const [isBMenuOpen,setIsBMenuOpen] = useState(false);
     
     return <>
-        <nav className="bg-primary p-5 flex justify-between">
+        <nav className="p-5 flex justify-between">
             <div className="text-2xl md:text-4xl text-secondary font-bold p-5">
                 Greedy Spaghetti
             </div>

@@ -4,10 +4,20 @@
 
 body {
   margin: 0;
-  background-color: #01172F;
+  background: radial-gradient(50% 50% at 50% 50%, #00497e 0%, #01172F 100%);
 }
 
 .App {
   text-align: center;
   margin: 0;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: bold;
 }

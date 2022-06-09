@@ -24,11 +24,11 @@ export default function RandomRoute(): JSX.Element {
     return <>
         <div className="grid md:grid-cols-2 grid-cols-1">
             <Box title={"Random Place in Brianza"} body={brianzaBody} link={""} />
-            <Box title={'Random "Attack Momentum"'} body={attackBody} link={""} />
-        </div>
-        <div className="grid md:grid-cols-2 grid-cols-1">
             <Box title={"Random Wolfram Tone"} body={wolframBody} link={""} />
-            <Box title={""} body={""} link={""} />
+            
         </div>
+        {/*<div className="grid md:grid-cols-2 grid-cols-1">
+            <Box title={'Random "Attack Momentum"'} body={attackBody} link={""} />
+        </div>*/}
     </>
 }

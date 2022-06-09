@@ -17,7 +17,7 @@ function App() {
       <link rel="preconnect" href="https://fonts.gstatic.com"></link>
 
       <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet"></link>
-      <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet"></link> 
+      <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet"></link>
 
       <Navbar></Navbar>
       <BrowserRouter>

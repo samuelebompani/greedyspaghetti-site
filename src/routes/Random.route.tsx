@@ -27,6 +27,9 @@ export default function RandomRoute(): JSX.Element {
             <Box title={"Random Wolfram Tone"} body={wolframBody} link={""} />
             
         </div>
+        <div className="grid">
+            <Box title={"Others under development"} body={""} link={""} />
+        </div>
         {/*<div className="grid md:grid-cols-2 grid-cols-1">
             <Box title={'Random "Attack Momentum"'} body={attackBody} link={""} />
         </div>*/}

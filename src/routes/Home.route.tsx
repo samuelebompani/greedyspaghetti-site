@@ -17,11 +17,11 @@ export default function HomeRoute(): JSX.Element {
         <div className="grid md:grid-cols-4 grid-cols-1 mt-5">
             <div></div>
             <div className="grid col-span-2 grid-cols-1">
-                <div><ArrowDown className="my-10"/></div>
+                <div><ArrowDown className="my-3 md:my-10"/></div>
                 <Box title="Easy Counter" body={bodyEC} link="https://play.google.com/store/apps/details?id=com.easy.counter" hover={true} />
-                <div><ArrowDown className="my-10"/></div>
+                <div><ArrowDown className="my-3 md:my-10"/></div>
                 <Box title="Euro Mascotte test" body={bodyEuroT} link="/euro-mascotte" hover={true} />
-                <div><ArrowDown className="my-10"/></div>
+                <div><ArrowDown className="my-3 md:my-10"/></div>
                 <Box title="Random things" body="" link="/random" hover={true} />
             </div>
             <div></div>

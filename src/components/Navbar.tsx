@@ -21,7 +21,7 @@ export default function Navbar(): JSX.Element {
             </label>
             
         </nav>
-        <nav className={"bg-primary p-10 justify-center "+(isBMenuOpen ? "flex lg:hidden" : "hidden")}>
+        <nav className={"p-10 justify-center "+(isBMenuOpen ? "flex lg:hidden" : "hidden")}>
             <div>
                 {navbarItems.map(([i, h]) => {return <div key={i}><NavbarItem name={i} href={h}/></div>})}
             </div>

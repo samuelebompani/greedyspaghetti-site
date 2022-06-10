@@ -1,6 +1,6 @@
 import './App.css';
 import Navbar from './components/Navbar';
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { BrowserRouter, HashRouter, Route, Routes } from 'react-router-dom'
 import RandomRoute from './routes/Random.route';
 import HomeRoute from './routes/Home.route';
 import Footer from './components/Footer';

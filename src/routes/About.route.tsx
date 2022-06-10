@@ -4,7 +4,7 @@ import gitImg from "../media/GitHub-Mark-Light-120px-plus.png"
 export default function AboutRoute(): JSX.Element {
 
     const gitBody = <div className="grid justify-items-center">
-        <img src={gitImg}/>
+        <img src={gitImg} alt="git logo"/>
     </div>
     const emailBody = <div className="grid justify-items-center text-md">
         samuele@greedyspaghetti.com

@@ -9,7 +9,7 @@ export default function Navbar(): JSX.Element {
     const colors = ["bg-primary", "bg-secondary", "bg-tertiary"]
     
     return <>
-        <nav className="p-5 flex justify-between">
+        <nav className="px-1 py-4 flex justify-between">
             
             <div><NavbarItem name={title} href="/"/></div>
             

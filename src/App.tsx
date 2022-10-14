@@ -10,6 +10,7 @@ import SandBoxRoute from './routes/SandBox.route';
 import AboutRoute from './routes/About.route';
 import Client from './test';
 import Cards from './routes/Cards.route';
+import Bip39Route from './routes/Bip39.route';
 
 function App() {
   return (
@@ -30,11 +31,12 @@ function App() {
           <Route path="/sandbox" element={<SandBoxRoute />} />
           <Route path="/cards" element={<Cards />} />
           <Route path="/about" element={<AboutRoute />} />
-          <Route path="*" element={<h2 className="text-2xl text-secondary">404 Page not found</h2>} />
+          <Route path="/bip39" element={<Bip39Route />} />
+          <Route path="*" element={<h2 className="text-2xl text-rich_black">404 Page not found</h2>} />
 
         </Routes>
       </BrowserRouter>
-      <Footer text="© 2022 Copyright: Greedy Spaghetti"/>
+      <Footer text="Copyright © 2022: Samuele Bompani"/>
     </div>
   );
 }

@@ -21,10 +21,10 @@ export default function HomeRoute(): JSX.Element {
     
 
     return <>
-        {/*<div className="grid md:grid-cols-2 grid-cols-1">
-            <Box title="Bip 39" body={bodyBip} link="" hover={true}/>
-            <Box title="XGs Euro 2020" body={bodyXg} link="" hover={true}/>
-        </div>*/}
+        <div className="grid md:grid-cols-2 grid-cols-1">
+            <Box title="Bip 39" body={"bodyBip"} link="/bip39" version={0}/>
+            <Box title="XGs Euro 2020" body={"bodyXg"} link="" version={1}/>
+        </div>
         {/*<div className="flex mt-5">
             <div className="flex xl:mx-20 lg:mx-10 mx-5">
                 <SlideShow slides={slides} />

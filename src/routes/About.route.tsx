@@ -11,8 +11,8 @@ export default function AboutRoute(): JSX.Element {
     </div>
     return <>
         <div className="grid md:grid-cols-1">
-            <Box title={"My Github"} body={gitBody} link={"https://github.com/samuelebompani"} />
-            <Box title={"Contacts"} body={emailBody} link={"mailto:samuele@greedyspaghetti.com"}/>
+            <Box title={"My Github"} body={gitBody} link={"https://github.com/samuelebompani"} version={1}/>
+            <Box title={"Contacts"} body={emailBody} link={"mailto:samuele@greedyspaghetti.com"} version={0}/>
         </div>
     </>
 }

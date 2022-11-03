@@ -3,11 +3,18 @@ import GSButton from "../components/GSButton";
 
 export default function Bip39Route() : JSX.Element {
     function IntToHexString(integer : number) {
-        return Number(integer).toString(16).padStart(2,'0');
+        return Number(integer).toString(16).padStart(2,'0').toUpperCase();
     }
 
     function HexToBin(hexString : string) {
         return parseInt(hexString, 16).toString(2).padStart(8,'0')
+    }
+
+    function array2Print(array: any[]) {
+        return <div className="flex w-full flex-wrap">
+            {array.map((i) => {return <div className="grow">{i}</div>})}
+        </div>
+        
     }
 
     function HexStringToByte(str : string) {
@@ -42,33 +49,49 @@ export default function Bip39Route() : JSX.Element {
         return array;
     }
 
-    async function Entropy() {
+    function LabelAndData(props: {label: string, data: any}) : JSX.Element {
+        return <>
+            <div className="font-bold py-2">{props.label}</div>
+            <div className="text-sm">{props.data}</div>
+        </>
+    }
+
+    function Entropy() : JSX.Element {
         var strength = 128;
         var buffer = new Uint8Array(strength/8);
         var data = window.crypto.getRandomValues(buffer);
-        var hexs = "";
-        var bins = "";
+        var hexs : string[]= []
+        var bins = [];
         var bb = [];
         
         for(var i in data){
             var hex = IntToHexString(data[i]);
-            hexs += hex;
-            bins += HexToBin(hex);
+            hexs.push(hex);
+            bins.push(HexToBin(hex));
             bb.push(HexToBin(hex));
         }
         var ids=[];
-        //for (var i=0; i<11; i++){
-        //    var uu = bins.slice(11*i,11*(i+1));
-        //    ids.push(parseInt(uu, 2));
-        //}
-        //var last = bins.slice(121,129);
+        
+        for (var j=0; j<11; j++){
+            var uu = bins.slice(11*j,11*(j+1));
+            console.log(uu)
+            //ids.push(parseInt(uu, 2));
+        }
+        var last = bins.slice(121,129);
         //var hash = await Sha256(HexStringToByte(hexs));
         //var checksum = HexToBin(hash[0]).slice(4,9);
         //var last = last+checksum;
         //var lastIdx = parseInt(last, 2);
         //ids.push(lastIdx);
 
-        let reader = new FileReader();
+        //let reader = new FileReader();
+
+        return <>
+            <LabelAndData label="Random values" data={array2Print(Array.from(data))}/>
+            <LabelAndData label="Hexadecimal" data={array2Print(hexs)}/>
+            <LabelAndData label="Binary" data={array2Print(bins)}/>
+            <LabelAndData label="Binary" data={array2Print(bb)}/>
+        </>
     }
     return <>
         <Box title={"Bip39"} body={
@@ -81,7 +104,7 @@ export default function Bip39Route() : JSX.Element {
             } link={""} version={0}/>
         <Box title={""} body={
             <div>
-                1234567890
+                <Entropy />
             </div>} link={""} version={1}/>
     </>
 }

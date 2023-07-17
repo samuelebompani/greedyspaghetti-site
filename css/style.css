@@ -1,8 +1,27 @@
 :root {
-    --primary: #AAA;
-    --secondary: #129;
+    --primary: #FFAEBC;
+    --secondary: #FBE7C6;
+    --tertiary: #A0E7E5;
+    --quaternary: #B4F8C8;
+    --quinary: #FFF;
+    --rich_black: #0D1821;
 }
 
 body {
     background-color: var(--primary);
+    font-family: 'Raleway', sans-serif;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.boxed {
+    border-width: 2px;
+    border-right-width: 5px;
+    border-bottom-width: 5px;
+    border-style: solid;
+    border-color: var(--rich_black);
+    border-radius: 9px;
 }

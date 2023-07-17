@@ -1,0 +1,6 @@
+--primary: "#FBE7C6";
+--secondary: "#B4F8C8";
+--tertiary: "#A0E7E5";
+--quaternary: "#FFAEBC";
+--quinary: "#FFF";
+--rich_black: "#0D1821";

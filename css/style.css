@@ -4,7 +4,7 @@
     --tertiary: #A0E7E5;
     --quaternary: #B4F8C8;
     --quinary: #FFF;
-    --rich_black: #0D1821;
+    --black: #0D1821;
 }
 
 body {
@@ -22,6 +22,10 @@ a {
     border-right-width: 5px;
     border-bottom-width: 5px;
     border-style: solid;
-    border-color: var(--rich_black);
+    border-color: var(--black);
     border-radius: 9px;
+}
+
+@media only screen and (max-width: 768px) {
+    
 }

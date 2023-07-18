@@ -7,4 +7,10 @@
         <a href="/random" class="boxed">random</a>
         <a href="/about" class="boxed">about</a>
     </div>
+    <div class="header-btn boxed">
+        <div></div>
+        <div></div>
+        <div></div>
+
+    </div>
 </div>

@@ -5,7 +5,8 @@
 .header {
     display: flex;
     justify-content: space-between;
-    font-weight: 500;
+    font-weight: 600;
+    padding: 10px;
 }
 
 .header-btn, .header-btn * {
@@ -51,7 +52,7 @@
         align-items: center;
         justify-content: center;
         gap: 10px;
-        z-index: -2;
+        z-index: 0;
     }
 
     .burger-menu > a {
@@ -70,13 +71,13 @@
     .header-btn {
         display: flex;
         flex-direction: column;
-        
         justify-content: center;
         align-items: center;
         background-color: var(--secondary);
         height: 50px;
         width: 50px;
         cursor: pointer;
+        z-index: 1;
         
     }
     

@@ -31,8 +31,8 @@
     </div>
     <div class="header-menu">
         <a href="/" class="boxed">home</a>
-        <a href="/random" class="boxed">random</a>
-        <a href="/about" class="boxed">about</a>
+        <a href="/random.php" class="boxed">random</a>
+        <a href="/about.php" class="boxed">about</a>
     </div>
     <div class="header-btn boxed" onClick="openCloseMenu()">
         <div id="header-btn-top"></div>
@@ -42,6 +42,6 @@
 </div>
 <div class="burger-menu" id="burger-menu">
     <a href="/" class="boxed">home</a>
-    <a href="/random" class="boxed">random</a>
-    <a href="/about" class="boxed">about</a>
+    <a href="/random.php" class="boxed">random</a>
+    <a href="/about.php" class="boxed">about</a>
 </div>

@@ -1,0 +1,15 @@
+.big-title {
+    font-size: xx-large;
+    font-weight: 600;
+}
+
+.home-page {
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    display: none;
+}

@@ -28,8 +28,10 @@ a {
 }
 
 .grid {
-    display: flex;
+    display: grid;
     gap: 10px;
+    width: 100%;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .grid-item {
@@ -41,17 +43,25 @@ a {
     flex-direction: column;
     align-items: center;
     flex-grow: 1;
-    width: 50%;
 }
 
-.grid-item > .square-btn {
+.grid-item > div {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    
+}
+
+.grid-item .square-btn {
     margin-bottom: 10px;
+
 }
 
 .grid-item-btns {
     display: flex;
     gap: 5px;
     margin-bottom: 5px;
+    justify-content: center;
 }
 
 .page {
@@ -71,7 +81,17 @@ a {
     cursor: pointer;
 }
 
+@media only screen and (max-width: 1000px) {
+    .grid {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+}
+
 @media only screen and (max-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+
     .page {
         margin-left: 10px;
         margin-right: 10px;  

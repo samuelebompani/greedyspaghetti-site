@@ -26,11 +26,11 @@
     }
 </script>
 <div class="header">
-    <div class="header-title boxed">
+    <a class="header-title boxed" href="/">
         Greedy Spaghetti
-    </div>
+    </a>
     <div class="header-menu">
-        <a href="/" class="boxed">home</a>
+        <a href="/projects.php" class="boxed">projects</a>
         <a href="/random.php" class="boxed">random</a>
         <a href="/about.php" class="boxed">about</a>
     </div>
@@ -41,7 +41,7 @@
     </div>
 </div>
 <div class="burger-menu" id="burger-menu">
-    <a href="/" class="boxed">home</a>
+    <a href="/projects.php" class="boxed">projects</a>
     <a href="/random.php" class="boxed">random</a>
     <a href="/about.php" class="boxed">about</a>
 </div>

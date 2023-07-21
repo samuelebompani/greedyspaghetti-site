@@ -43,7 +43,7 @@
     .burger-menu {
         display: none;
         flex-direction: column;
-        background-color: var(--tertiary);
+        background: linear-gradient(90deg, var(--tertiary) 0%, var(--quaternary) 100%);
         position: fixed;
         top: 0;
         left: 0;

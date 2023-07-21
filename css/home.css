@@ -1,15 +1,21 @@
 .big-title {
-    font-size: xx-large;
+    font-size: 200%;
     font-weight: 600;
+    transition-property: font-size;
+    transition-duration: 2s;
+    cursor: default;
 }
 
 .home-page {
-    min-height: 90vh;
+    min-height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .header {
-    display: none;
+    visibility: hidden;
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 2s;
 }

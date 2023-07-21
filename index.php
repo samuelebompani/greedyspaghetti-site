@@ -6,7 +6,7 @@
     <body>
         <?php include "./components/header.php"; ?>
         <div class="home-page" onClick="onTitleClick()">
-            <div class="big-title">Greedy Spaghetti</div>
+            <div class="big-title">Greedy<br>Spaghetti</div>
         </div>
         <?php include "./components/footer.php"; ?>
     </body>

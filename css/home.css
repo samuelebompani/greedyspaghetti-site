@@ -4,6 +4,7 @@
     transition-property: font-size;
     transition-duration: 2s;
     cursor: default;
+    text-align: center;
 }
 
 .home-page {

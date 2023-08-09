@@ -22,33 +22,41 @@
 }
 
 .spaghetto {
-    height: 5px;
-    width: 10vw;
+    height: 4px;
+    width: 60vw;
     position: fixed;
+    background-color: yellow;
     border-radius: 999px;
-    animation: animate 4s linear infinite;
-    rotate: 53deg;
-    
-}
-
-.spaghetto::before {
-    position: absolute;
-    content: '∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿';
-    /* Ratio -> font-size/letter-spacing = 6.25 */
-    letter-spacing: -18.76px;
-    font-size: 60px;
-    color: yellow;
-    text-shadow: 0px 0px 2px black;
-    font-stretch: ultra-expanded;
-    z-index: 0;
+    border-color: black;
+    border-width: 0.5px;
+    border-style: solid;
+    rotate: 90deg;
+    animation: fall 4s ease-in;
 }
 
 @keyframes animate {
     0% {
-        transform: translateX(-100px);
+        transform: translateX(-200vw);
     }
     100% {
-        transform: translateX(-7px);
+        transform: translateX(200vw);
     }
 }
 
+@keyframes animate2 {
+    0% {
+        transform: translateX(150vw);
+    }
+    100% {
+        transform: translateX(-150vw);
+    }
+}
+
+@keyframes fall {
+    0% {
+        transform: translateX(-150vh);
+    }
+    100% {
+        transform: translateX(40vh);
+    }
+}

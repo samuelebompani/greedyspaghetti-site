@@ -64,6 +64,12 @@ a {
     justify-content: center;
 }
 
+.iframe-boxed {
+    width: 100%;
+    border: black solid 2px;
+    height: 25vh;
+}
+
 .page {
     padding-top: 10px;
     margin-left: 20%;

@@ -15,7 +15,10 @@
                     +x+"%2C45."+y+"&amp;layer=mapnik"
                 console.log(x,y)
             }
-            newRandomPlace()
+            
+            window.onload = function() {
+                newRandomPlace()
+            };
         </script>
     </head>
     <body>
@@ -24,10 +27,10 @@
             <div class="grid">
                 <div class="boxed grid-item">
                     <h2>Random place in Brianza</h2>
-                    <div>
-                        <div>
-                            <iframe id="brianza-iframe"
-                                src="https://www.openstreetmap.org/export/embed.html?bbox=9.<?php echo(rand(12000,44650) . "%2C45." . rand(61070,79500) . "&amp;layer=mapnik")?>">
+                    <div style="width: 100%;">
+                        <div style="width: 100%;">
+                            <iframe id="brianza-iframe" class="iframe-boxed"
+                                >
                             </iframe>
                             <div class="grid-item-btns">
                                 <div class="boxed wide-btn" onClick="newRandomPlace()">

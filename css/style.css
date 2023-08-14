@@ -73,11 +73,14 @@ a {
 .leaderboard {
     padding: 10px;
     width: 100%;
-    background-color: var(--tertiary)
 }
 
 .leaderboard > tbody > tr > th {
     text-align: left;
+}
+
+.leaderboard-box {
+    background-color: var(--tertiary)
 }
 
 .page {
@@ -95,6 +98,10 @@ a {
     width: 50px;
     background-color: var(--secondary);
     cursor: pointer;
+}
+
+.title-center {
+    text-align: center;
 }
 
 .wide-btn {

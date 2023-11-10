@@ -1,0 +1,47 @@
+input, textarea {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-width: 2px;
+    border-right-width: 5px;
+    border-bottom-width: 5px;
+    border-style: solid;
+    border-color: var(--black);
+    border-radius: 9px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: medium;
+}
+
+label {
+    background-color: var(--secondary);
+    border-width: 2px;
+    border-right-width: 5px;
+    border-bottom-width: 5px;
+    border-style: solid;
+    border-color: var(--black);
+    border-radius: 9px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.recipe-form {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.two-columns {
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}

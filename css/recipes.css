@@ -1,0 +1,85 @@
+.card-recipes {
+    max-width: 300px;
+}
+
+.content-menu-el-recipes {
+    display: flex;
+    width: 100%;
+    margin-top: 10px;
+    place-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
+.grid-item-btns {
+    justify-content: space-between;
+    width: 100%;
+}
+
+.grid-item-btns > div {
+    height: 50px;
+    align-items: center;
+    display: flex;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.grid-recipes {
+    display: flex;
+    gap:20px;
+    place-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.img-menu-el-recipes {
+    width: 100%;
+    height: 20vh;
+    object-fit: cover;
+}
+
+.img-recipe-container {
+    background-position: center;
+    background-size: cover;
+    min-width: 50%;
+    min-height: 20vh;
+    max-height: 50vh;
+    max-width: 40vw;
+}
+
+.img-menu-el-recipes-container {
+    width: 100%;
+    height: 20vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.recipe-body {
+    display: flex;
+
+}
+
+.recipe-ingredients {
+    padding: 20px;
+}
+
+.text-menu-el-recipes {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    flex-wrap: wrap;
+    justify-content: first baseline;
+}
+
+.title-menu-el-recipes {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: large;
+}

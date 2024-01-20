@@ -47,8 +47,8 @@
                                             '. $row['descr_breve'] .'
                                         </div>
                                         <div class="grid-item-btns">
-                                            <div class="boxed bg-secondary">Preparazione</div>
-                                            <a href="/recipes"
+                                            <div class=""></div>
+                                            <a href="/recipes/pages?id='. $row['id'].'"
                                                 class="boxed square-btn">
                                                 <img src="/media/img/arrow.png" width=50 height=50/>
                                             </a>
@@ -59,30 +59,6 @@
                         }
                     }
                     $mysqli->close(); ?>
-                <?php /*<div class="boxed grid-item card-recipes">
-                    <div class="boxed bg-secondary title-menu-el-recipes">
-                        Besciamella</div>
-                    <div style="width: 100%; height: 100%;">
-                        <div class="content-menu-el-recipes">
-                            <div class="img-menu-el-recipes-container boxed"
-                                style="background-image: url('../media/img/besciamella.jpg');">
-                                
-                            </div>
-                            <div class="boxed bg-secondary text-menu-el-recipes">
-                                La besciamella (in francese béchamelle) è una delle salse madri della cucina francese, 
-                                che viene usata come elemento di partenza per salse più elaborate.
-                            </div>
-                            <div class="grid-item-btns">
-                                <div class="boxed bg-secondary">Zuppa</div>
-                                <a href="/"
-                                    class="boxed square-btn">
-                                    <img src="/media/img/arrow.png" width=50 height=50/>
-                                </a>
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>*/?>
             </div>
         </div>
     </body>

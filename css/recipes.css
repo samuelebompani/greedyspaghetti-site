@@ -60,6 +60,10 @@
 
 }
 
+.recipe-container {
+    max-width: 600px;
+}
+
 .recipe-ingredients {
     padding: 20px;
 }

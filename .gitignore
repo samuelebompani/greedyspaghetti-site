@@ -1,2 +1,3 @@
 .env
 /recipes/utils/credentials.txt
+/recipes/uploads/*.jpg

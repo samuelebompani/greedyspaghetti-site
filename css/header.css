@@ -92,6 +92,20 @@
         justify-content: center;
     }
     
+    .burger-menu > a:active {
+        background-color: var(--quaternary);
+        transform: translateY(3px);
+        transform: translateX(3px);
+        margin-top: 3px;
+        margin-left: 3px;
+        border-right-width: 2px;
+        border-bottom-width: 2px;
+    }
+
+    .burger-menu > a:hover {
+        background-color: var(--secondary-dark);
+    }
+
     .header-menu {
         display: none;
     }

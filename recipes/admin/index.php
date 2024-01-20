@@ -93,7 +93,7 @@
                     </div>
                     <input type="submit" value="Submit" name="submit" class="bg-quaternary">
                 </form> 
-                <form method="post" action="upload.php" enctype="multipart/form-data"
+                <form method="post" action="/recipes/admin/upload.php" enctype="multipart/form-data"
                             class="recipe-form">
                     <div style="width:100%; text-align: center;">
                         <label for="rimg">Image:</label><br>

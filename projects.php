@@ -26,7 +26,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="boxed grid-item">
+                <?php /*<div class="boxed grid-item">
                     <h2>Football stats</h2>
                     <div>
                         <img src="/media/img/fs1.png" width=100 height=100 class=""/>
@@ -45,11 +45,11 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div>*/ ?>
                 <div class="boxed grid-item">
                     <h2>Recipes</h2>
                     <div>
-                        <img src="/media/img/fs1.png" width=100 height=100 class=""/>
+                        <img src="/media/img/r.png" width=100 height=100 class=""/>
                         <div>
                             <p>A collection of my favourite recipes. <br><br><br>
                             </p>

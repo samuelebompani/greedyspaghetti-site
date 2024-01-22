@@ -5,7 +5,7 @@
     </head>
     <body>
         <?php include "./components/header.php"; ?>
-        <div class="home-page" onClick="onTitleClick()">
+        <div class="home-page" onClick="onTitleClick()" onscroll="onTitleClick()">
             <div class="big-title">Greedy<br>Spaghetti</div>
         </div>
         <?php include "./components/footer.php"; ?>

@@ -38,7 +38,7 @@
                 
                 <div class="boxed grid-item recipe-container">
                     <div class="boxed bg-secondary title-menu-el-recipes">
-                        <?php echo $row['nome']; ?>
+                        <?php echo nl2br($row['nome']); ?>
                     </div>
                     <div style="width: 100%; height: 100%;" class="recipe-body">
                         <div class="content-menu-el-recipes">

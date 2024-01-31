@@ -23,8 +23,16 @@
         $mysqli->set_charset("utf8");
         $sql = "Select * from recipe";
         $result = $mysqli->query($sql);
+        $lan = $_GET['lan']
         ?>
-        
+        <script>
+            function changeLanguage(lan) {
+                url = new URL(window.location.href);
+                url.searchParams.set("lan", lan);
+                console.log(url)
+                window.location.href = url.href
+            }
+        </script>
     </head>
     <body>
         <?php include "../components/header.php"; ?>
@@ -34,21 +42,27 @@
                     if ($result->num_rows > 0) {
                         // output data of each row
                         while($row = $result->fetch_assoc()) {
-                            error_log($row['descr_breve']);
+                            // set variables depending on the language
+                            $isEnglish = $lan==="en";
+                            $name = $isEnglish ? $row['name_'] : $row['nome'];
+                            $descr = $isEnglish ? $row['descr_short'] : $row['descr_breve'];
                             echo '<div class="boxed grid-item card-recipes">
                                 <div class="boxed bg-secondary title-menu-el-recipes">
-                                    ' . $row['nome'] . '</div>
+                                    ' . $name . '</div>
                                 <div style="width: 100%; height: 100%;">
                                     <div class="content-menu-el-recipes">
                                         <div class="img-menu-el-recipes-container boxed"
                                             style="background-image: url(\'./uploads/'. $row['image_url'] .'\');">
                                         </div>
                                         <div class="boxed bg-secondary text-menu-el-recipes">
-                                            '. $row['descr_breve'] .'
+                                            '. $descr .'
                                         </div>
                                         <div class="grid-item-btns">
-                                            <div class=""></div>
-                                            <a href="/recipes/pages?id='. $row['id'].'"
+                                            <div class="language-btns">
+                                                <div class="boxed square-btn " onclick="changeLanguage(`en`)">EN</div>
+                                                <div class="boxed square-btn " onclick="changeLanguage(`ita`)">ITA</div>
+                                            </div>
+                                            <a href="/recipes/pages?lan='.$lan.'&id='. $row['id'].'"
                                                 class="boxed square-btn">
                                                 <img src="/media/img/arrow.png" width=50 height=50/>
                                             </a>
@@ -61,5 +75,6 @@
                     $mysqli->close(); ?>
             </div>
         </div>
+        <?php include "../components/footer.php"; ?>
     </body>
 </html>

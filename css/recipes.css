@@ -18,10 +18,9 @@
 }
 
 .grid-item-btns > div {
-    height: 50px;
     align-items: center;
     display: flex;
-    padding-left: 10px;
+    
     padding-right: 10px;
 }
 
@@ -31,6 +30,7 @@
     place-content: center;
     flex-wrap: wrap;
     width: 100%;
+    padding-bottom:20px;
 }
 
 .img-menu-el-recipes {

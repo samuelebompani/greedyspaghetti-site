@@ -29,6 +29,24 @@
             $row = $result->fetch_assoc();
         }
         ?>
+        <script type="text/javascript">
+            function changeLanguage(lan) {
+                url = new URL(window.location.href);
+                url.searchParams.set("lan", lan);
+                console.log(url)
+                window.location.href = url.href
+            }
+        </script>
+
+        <?php 
+            $lan = $_GET['lan'];
+            $isEnglish = $lan==="en";
+            $name = $isEnglish ? $row['name_'] : $row['nome'];
+            $descr = $isEnglish ? $row['descr_short'] : $row['descr_breve'];
+            $prep = $isEnglish ? $row['descr_long'] : $row['descr_lunga'];
+            $ingr = $isEnglish ? $row['ingredients'] : $row['ingredienti'];
+            $ingrTitle = $isEnglish ? 'Ingredients' : 'Ingredienti';
+        ?>
         
     </head>
     <body>
@@ -38,16 +56,16 @@
                 
                 <div class="boxed grid-item recipe-container">
                     <div class="boxed bg-secondary title-menu-el-recipes">
-                        <?php echo nl2br($row['nome']); ?>
+                        <?php echo nl2br($name); ?>
                     </div>
                     <div style="width: 100%; height: 100%;" class="recipe-body">
                         <div class="content-menu-el-recipes">
                             <div class="two-cols">
                                 <div class="boxed bg-secondary">
                                     <div class="recipe-ingredients">
-                                        Ingredienti:<br>
+                                        <?php echo $ingrTitle; ?>:<br>
                                         <?php 
-                                            echo $row['ingredienti'];
+                                            echo $ingr;
                                         ?>
                                     </div>
                                 </div>
@@ -57,11 +75,11 @@
                             </div>
                             
                             <div class="boxed bg-secondary text-menu-el-recipes">
-                                <?php echo $row['descr_breve'];?>
+                                <?php echo $descr;?>
                             </div>
 
                             <div class="boxed bg-secondary text-menu-el-recipes">
-                                <?php echo $row['descr_lunga'];?>
+                                <?php echo $prep;?>
                             </div>
 
                             <div class="grid-item-btns">
@@ -69,7 +87,10 @@
                                     class="boxed square-btn">
                                     <img src="/media/img/arrow.png" width=50 height=50 style="rotate: 180deg; z-index:0;"/>
                                 </a>
-                                <div class="boxed bg-secondary">Preparazione</div>
+                                <div class="language-btns">
+                                    <div class="boxed square-btn " onclick="changeLanguage(`en`)">EN</div>
+                                    <div class="boxed square-btn " onclick="changeLanguage(`ita`)">ITA</div>
+                                </div>
                             </div>
                         </div>
                     </div>

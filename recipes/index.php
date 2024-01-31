@@ -23,9 +23,9 @@
         $mysqli->set_charset("utf8");
         $sql = "Select * from recipe";
         $result = $mysqli->query($sql);
-        $lan = $_GET['lan']
+        $lan = $_GET['lan'];
         ?>
-        <script>
+        <script type="text/javascript">
             function changeLanguage(lan) {
                 url = new URL(window.location.href);
                 url.searchParams.set("lan", lan);
@@ -33,6 +33,7 @@
                 window.location.href = url.href
             }
         </script>
+        
     </head>
     <body>
         <?php include "../components/header.php"; ?>

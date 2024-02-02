@@ -30,6 +30,27 @@ label {
     margin-bottom: 10px;
 }
 
+.new-recipe {
+    display: flex;
+    align-items: center;
+}
+
+.new-recipe * {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.new-recipe-card {
+    height: 100px;
+    width: 100px;
+    background-color: var(--tertiary);
+}
+
+.new-recipe-card > a {
+    font-size: 32px;
+}
+
 .recipe-form {
     width: 100%;
     display: flex;

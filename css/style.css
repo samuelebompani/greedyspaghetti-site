@@ -55,7 +55,6 @@ a {
     border-radius: 9px;
 }
 
-
 .grid {
     display: grid;
     gap: 20px;
@@ -141,6 +140,12 @@ a {
     display: flex;
     align-self: center;
     height: 100%;
+}
+
+.place-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .square-btn {

@@ -24,6 +24,30 @@
             exit();
         }*/
 
+        $file = file_get_contents("../utils/credentials.txt");
+        $secrets = explode("\n", $file);
+        $server = $secrets[0];
+        $db = $secrets[1];
+        $user = $secrets[2];
+        $pass = $secrets[3];
+        
+        //// Create connection
+        $mysqli = new mysqli($server, $user, $pass, $db);
+
+        //// Check connection
+        if ($mysqli->connect_errno) {
+            printf("Connect failed: %s\n", $mysqli->connect_error);
+            exit();
+        }
+        
+        $mysqli->set_charset("utf8");
+        $sql = "SELECT * FROM `recipe` WHERE recipe.id = ". $_GET['id'];
+        $result = $mysqli->query($sql);
+        
+        if ($result->num_rows > 0) {
+            $row = $result->fetch_assoc();
+        }
+
         function sendRequest() {
             $file = file_get_contents("../utils/credentials.txt");
             $secrets = explode("\n", $file);
@@ -58,11 +82,12 @@
         
     </head>
     <body>
+        <?php include "../../components/admin-header.php"; ?>
         <div class="page">
             <div>
                 <form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>" enctype="multipart/form-data"
                         class="recipe-form">
-                    <div class="title-center title-menu-el-recipes boxed bg-secondary">New Recipe</div>
+                    <div class="title-center title-menu-el-recipes boxed bg-secondary">Edit Recipe</div>
                     
                     <div class="two-columns">
                         <div style="width:100%; text-align:center;">

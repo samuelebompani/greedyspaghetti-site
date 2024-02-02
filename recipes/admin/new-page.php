@@ -58,6 +58,7 @@
         
     </head>
     <body>
+        <?php include "../../components/admin-header.php"; ?>
         <div class="page">
             <div>
                 <form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>" enctype="multipart/form-data"

@@ -30,8 +30,8 @@
         Recipes admin area
     </a>
     <div class="header-menu">
-        <a href="/" class="boxed">edit</a>
-        <a href="/" class="boxed">new page</a>
+        <a href="/recipes/admin" class="boxed">edit</a>
+        <a href="/recipes/admin/new-page.php" class="boxed">new page</a>
     </div>
     <div class="header-btn boxed" onClick="openCloseMenu()">
         <div id="header-btn-top"></div>
@@ -40,6 +40,6 @@
     </div>
 </div>
 <div class="burger-menu" id="burger-menu">
-    <a href="/" class="boxed">edit</a>
-    <a href="/" class="boxed">new page</a>
+    <a href="/recipes/admin" class="boxed">edit</a>
+    <a href="/recipes/admin/new-page.php" class="boxed">new page</a>
 </div>

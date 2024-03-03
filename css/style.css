@@ -98,6 +98,11 @@ a {
     height: 25vh;
 }
 
+.marginy-10 {
+    margin-top: 10pt;
+    margin-bottom: 10pt;
+}
+
 .language-btns {
     display: flex;
     justify-content: space-around;

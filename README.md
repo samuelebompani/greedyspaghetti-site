@@ -1,4 +1,5 @@
 # Greedy Spaghetti site
+![Site deploy](https://github.com/samuelebompani/greedyspaghetti-site/actions/workflows/ftp-deploy.yml/badge.svg)
 
 A simple site for my personal projects. This site is developed from scratch in PHP, JS, HTML and CSS.
 

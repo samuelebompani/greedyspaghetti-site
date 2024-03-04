@@ -55,6 +55,10 @@ a {
     border-radius: 9px;
 }
 
+.justify-between {
+    justify-content: space-between;
+}
+
 .grid {
     display: grid;
     gap: 20px;
@@ -75,7 +79,6 @@ a {
 
 .grid-item > div {
     display: flex;
-    justify-content: space-evenly;
     gap: 20px;
     
 }
@@ -190,6 +193,10 @@ a {
     max-width: 48%;
     min-width: 46%;
     
+}
+
+.w-full {
+    width: 100%;
 }
 
 .wide-btn {

@@ -19,8 +19,8 @@ In this page all the cards contain a random generator of something: right now th
 
 ![Screenshot from 2024-03-03 12-10-10](https://github.com/samuelebompani/greedyspaghetti-site/assets/33036714/35ff20bf-e1ee-40fd-93b1-d1615b16ec1f)
 
-Projects maintained at the moment are _Easy Counter_, an app for counting available on the Play Store, and a Recipes blog.
+Projects maintained at the moment are _Easy Counter_, an app for counting available on the Play Store, a Recipes blog and I newsletter I write with a friend.
 
 ### About section
 
-This page is a WIP
+A brief description of the site.

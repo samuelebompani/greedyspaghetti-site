@@ -8,9 +8,9 @@
             <div class="grid">
                 <div class="boxed grid-item">
                     <h2>Easy Counter</h2>
-                    <div>
+                    <div class="justify-between w-full">
                         <img src="/media/img/easy_counter_logo.png" width=100 height=100 class=""/>
-                        <div>
+                        <div class="w-full">
                             <p>If you need to count something, <br>here's your app.<br>
                                     Download available in the Play Store.
                             </p>
@@ -48,13 +48,32 @@
                 </div>*/ ?>
                 <div class="boxed grid-item">
                     <h2>Recipes</h2>
-                    <div>
+                    <div class="justify-between w-full">
                         <img src="/media/img/r.png" width=100 height=100 class=""/>
-                        <div>
+                        <div class="w-full">
                             <p>A collection of my favourite recipes. <br><br><br>
                             </p>
                             <div class="grid-item-btns">
                                 <a href="/recipes/"
+                                    class="boxed square-btn">
+                                    <img src="/media/img/arrow.png" width=50 height=50/>
+                                </a>
+                                <div class="boxed square-btn">
+                                    <img src="/media/img/info.png" width=50 height=50/>
+                                </div>   
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="boxed grid-item">
+                    <h2>A quick BBBreak</h2>
+                    <div class="justify-between w-full">
+                        <img src="/media/img/bbblogo.jpg" width=100 height=100 class=""/>
+                        <div class="w-full">
+                            <p>A newsletter I write with my friends. It's in italian and we send a new mail every month. You can subscribe clicking here<br>
+                            </p>
+                            <div class="grid-item-btns">
+                                <a href="http://eepurl.com/hOhaeX"
                                     class="boxed square-btn">
                                     <img src="/media/img/arrow.png" width=50 height=50/>
                                 </a>

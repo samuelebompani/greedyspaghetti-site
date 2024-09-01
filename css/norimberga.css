@@ -1,3 +1,17 @@
+.istr-nor-box {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    place-content: center;
+    padding: 5px;
+}
+
+.jud-nor-box {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: large;
+}
+
 .word-nor-box {
     margin-top: 20px;
     margin-bottom: 20px;

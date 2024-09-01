@@ -3,7 +3,10 @@
     margin-bottom: 10px;
     width: 100%;
     place-content: center;
-    padding: 5px;
+}
+
+.istr-nor-box > div {
+    padding: 20px;
 }
 
 .jud-nor-box {

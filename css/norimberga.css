@@ -1,0 +1,10 @@
+.word-nor-box {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    min-height: 20vh;
+    place-content: center;
+    align-items: center;
+    font-size: xx-large;
+    font-weight: 600;
+}

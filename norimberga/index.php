@@ -13,8 +13,13 @@
             return Math.floor(Math.random() * (max - min) + min);
         }
 
+        let fileName = './words.csv'
+
+        function changeFilename(newName) {
+            fileName = newName
+        }
         async function getNewWord() {
-            const names = await fetch('./words.csv', { mode: 'no-cors' })
+            const names = await fetch(fileName, { mode: 'no-cors' })
                 .then(response => response.text())
                 .then(data => data)
                 .catch(error => console.error(error));
@@ -37,6 +42,13 @@
                 <div class="boxed bg-secondary jud-nor-box">Sopravvalutato? Sottovalutato? O giustamente valutato?</div>
                 <div class="grid-item-btns" style="margin-bottom: 10px;">
                     <div class="boxed wide-btn " style="padding-right: 0" onclick="getNewWord()">Prossimo</div>
+                </div>
+            </div>
+            <div class="boxed grid-item">
+                <div class="boxed bg-secondary title-menu-el-recipes">Categorie</div>
+                <div class="" style="margin-top: 10px;">
+                    <div class="boxed bg-secondary title-menu-el-recipes" onclick="changeFilename('./words.csv')">Calciatori serie A</div>
+                    <div class="boxed bg-secondary title-menu-el-recipes" onclick="changeFilename('./citta.csv')">Capitali europee</div>
                 </div>
             </div>
             <div class="boxed grid-item">

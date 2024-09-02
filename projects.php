@@ -109,7 +109,7 @@
                     <div class="w-full">
                         <p>
                             Norimberga is a debate and persuasion game for 3 or more players, inspired by the podcast
-                            "Pendolino" by "Ultimo Uomo".<br>
+                            "Pendolino" by "UltimoUomo".<br>
                             Overrated, underrated, or fairly rated?
                         </p>
                         <div class="grid-item-btns">

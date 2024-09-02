@@ -14,13 +14,21 @@
         }
 
         let fileName = './food.csv'
+        let alreadyUsed = []
 
         function changeFilename(newName) {
             const btn1 = document.getElementById(fileName);
             fileName = newName
             const btn2 = document.getElementById(newName);
-            if(btn1) btn1.style.background = "var(--secondary)";
+            if (btn1) btn1.style.background = "var(--secondary)";
             btn2.style.background = "#ffed5d";
+            alreadyUsed = []
+        }
+
+        function reset() {
+            const word = document.getElementById("word-nor");
+            alreadyUsed = []
+            word.innerHTML = 'Clicca "Prossima" per iniziare'
         }
 
         async function getNewWord() {
@@ -29,8 +37,16 @@
                 .then(data => data)
                 .catch(error => console.error(error));
             const namesList = names.split(",")
-            const rand = getRandomArbitrary(0, namesList.length)
             const word = document.getElementById("word-nor");
+            if (alreadyUsed.length === namesList.length) {
+                word.innerHTML = 'Parole terminate! Clicca "reset" per ricominciare'
+                return
+            }
+            let rand = getRandomArbitrary(0, namesList.length)
+            while (alreadyUsed.includes(rand)) {
+                rand = getRandomArbitrary(0, namesList.length)
+            }
+            alreadyUsed.push(rand)
             word.innerHTML = namesList[rand]
         }
     </script>
@@ -48,7 +64,8 @@
     $cat = [
         new Category("Cibo italiano", './food.csv'),
         new Category("Calciatori serie A", "./words.csv"),
-        new Category("Capitali europee", "./citta.csv")
+        new Category("Capitali europee", "./citta.csv"),
+        new Category("Registi", "./directors.csv")
     ]
         ?>
 
@@ -61,11 +78,12 @@
             <div class="boxed grid-item">
                 <div class="boxed bg-secondary title-menu-el-recipes">Norimberga</div>
                 <div class="boxed bg-primary word-nor-box">
-                    <div id="word-nor" style="padding: 10px;">Clicca "Prossimo" per iniziare</div>
+                    <div id="word-nor" style="padding: 10px;">Clicca "Prossima" per iniziare</div>
                 </div>
                 <div class="boxed bg-secondary jud-nor-box">Sopravvalutato? Sottovalutato? O giustamente valutato?</div>
                 <div class="grid-item-btns" style="margin-bottom: 10px;">
-                    <div class="boxed wide-btn " style="padding-right: 0" onclick="getNewWord()">Prossimo</div>
+                    <div class="boxed wide-btn " style="padding-right: 0" onclick="reset()">Reset</div>
+                    <div class="boxed wide-btn " style="padding-right: 0" onclick="getNewWord()">Prossima</div>
                 </div>
             </div>
             <div class="boxed grid-item">
@@ -73,8 +91,11 @@
                 <div class="cat-nor-box">
                     <?php
                     foreach ($cat as $c) { ?>
-                        <div class="cat-nor boxed bg-secondary title-menu-el-recipes wide-btn" style="<?php if($c->path == "./food.csv") echo "background-color: #ffed5d";?>" id="<?php echo $c->path?>"
-                            onclick="changeFilename('<?php echo $c->path?>')"><?php echo $c->name?></div>
+                        <div class="cat-nor boxed bg-secondary title-menu-el-recipes wide-btn" style="<?php if ($c->path == "./food.csv")
+                            echo "background-color: #ffed5d"; ?>" id="<?php echo $c->path ?>"
+                            onclick="changeFilename('<?php echo $c->path ?>')">
+                            <?php echo $c->name ?>
+                        </div>
                     <?php }
                     ?>
                 </div>
@@ -121,9 +142,22 @@
                 <div class="boxed bg-secondary title-menu-el-recipes">?</div>
                 <div class="boxed bg-secondary istr-nor-box">
                     <div>
-                        Il gioco "Norimberga" è direttamente ispirato al podcast "Pendolino" di Ultimo Uomo.
+                        Il gioco "Norimberga" è direttamente ispirato al podcast "Pendolino" di "UltimoUomo".
                         Il formato del gioco riprende lo spirito del podcast, offrendo ai giocatori la possibilità di
                         esprimere le proprie opinioni in modo divertente e coinvolgente
+                    </div>
+                </div>
+            </div>
+            <div class="boxed grid-item">
+                <div class="boxed bg-secondary title-menu-el-recipes">Miglioramenti</div>
+                <div class="boxed bg-secondary istr-nor-box">
+                    <div>
+                        Se ti piace Norimberga e vuoi contribuire al suo sviluppo, segnalare idee, proporre
+                        miglioramenti o semplicemente collaborare, sei il benvenuto! In particolare, più categorie - e
+                        quindi liste di nomi - ci sono e più divertente diventa il gioco. Le liste sono dei semplici
+                        csv.<br>
+                        Per qualsiasi proposta o richiesta, puoi contattarmi via email a samuele [at]
+                        greedyspaghetti [dot] com.
                     </div>
                 </div>
             </div>

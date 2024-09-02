@@ -13,11 +13,16 @@
             return Math.floor(Math.random() * (max - min) + min);
         }
 
-        let fileName = './words.csv'
+        let fileName = './food.csv'
 
         function changeFilename(newName) {
+            const btn1 = document.getElementById(fileName);
             fileName = newName
+            const btn2 = document.getElementById(newName);
+            if(btn1) btn1.style.background = "var(--secondary)";
+            btn2.style.background = "#ffed5d";
         }
+
         async function getNewWord() {
             const names = await fetch(fileName, { mode: 'no-cors' })
                 .then(response => response.text())
@@ -41,9 +46,9 @@
         }
     }
     $cat = [
+        new Category("Cibo italiano", './food.csv'),
         new Category("Calciatori serie A", "./words.csv"),
-        new Category("Capitali europee", "./citta.csv"),
-        
+        new Category("Capitali europee", "./citta.csv")
     ]
         ?>
 
@@ -65,10 +70,10 @@
             </div>
             <div class="boxed grid-item">
                 <div class="boxed bg-secondary title-menu-el-recipes">Categorie</div>
-                <div class="" style="margin-top: 10px;">
+                <div class="cat-nor-box">
                     <?php
                     foreach ($cat as $c) { ?>
-                        <div class="cat-nor boxed bg-secondary title-menu-el-recipes wide-btn"
+                        <div class="cat-nor boxed bg-secondary title-menu-el-recipes wide-btn" style="<?php if($c->path == "./food.csv") echo "background-color: #ffed5d";?>" id="<?php echo $c->path?>"
                             onclick="changeFilename('<?php echo $c->path?>')"><?php echo $c->name?></div>
                     <?php }
                     ?>

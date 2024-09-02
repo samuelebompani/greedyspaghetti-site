@@ -14,13 +14,12 @@
                     <img src="/media/img/easy_counter_logo.png" width=100 height=100 class="" />
                     <div class="w-full">
                         <p>If you just need to count something, <br>here's your app.<br>Available for Android.<br>
-
                         </p>
                         <div class="grid-item-btns">
                             <a href="/apps/EasyCounter.apk" class="boxed square-btn">
                                 <img src="/media/img/arrow.png" style="rotate: 90deg;" width=50 height=50 />
                             </a>
-                            <div class="boxed square-btn">
+                            <div class="boxed square-btn useless-btn">
                                 <img src="/media/img/info.png" width=50 height=50 />
                             </div>
                         </div>

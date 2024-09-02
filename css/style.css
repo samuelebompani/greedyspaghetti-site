@@ -195,6 +195,17 @@ a {
     
 }
 
+.useless-btn:active {
+    opacity: 0;
+    transition: 1s
+  }
+
+.useless-btn {
+    
+    opacity: 1;
+    transition: all 0.8s
+}
+
 .w-full {
     width: 100%;
 }

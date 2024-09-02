@@ -1,6 +1,14 @@
 .cat-nor {
     font-size: 14px;
     margin-top: 0;
+    text-align: center;
+}
+
+.cat-nor-box {
+    flex-wrap: wrap;
+    width: 100%;
+    place-content: center;
+    margin-top: 20px;
 }
 
 .istr-nor-box {
@@ -29,4 +37,10 @@
     align-items: center;
     font-size: xx-large;
     font-weight: 600;
+}
+
+@media only screen and (max-width: 768px) {
+    .word-nor-box {
+        font-size: x-large;
+    }
 }

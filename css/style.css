@@ -163,7 +163,7 @@ a {
     cursor: pointer;
 }
 
-.square-btn:active {
+.square-btn:active, .wide-btn:active {
     background-color: var(--quaternary);
     transform: translateY(3px);
     transform: translateX(3px);
@@ -173,7 +173,7 @@ a {
     border-bottom-width: 2px;
 }
 
-.square-btn:hover {
+.square-btn:hover, .wide-btn:hover {
     background-color: var(--secondary-dark);
 }
 

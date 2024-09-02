@@ -29,6 +29,23 @@
             word.innerHTML = namesList[rand]
         }
     </script>
+    <?php
+    class Category
+    {
+        public $name;
+        public $path;
+        public function __construct(string $name, string $path)
+        {
+            $this->name = $name;
+            $this->path = $path;
+        }
+    }
+    $cat = [
+        new Category("Calciatori serie A", "./words.csv"),
+        new Category("Capitali europee", "./citta.csv"),
+        
+    ]
+        ?>
 
 </head>
 
@@ -38,7 +55,9 @@
         <div class="grid" style="grid-template-columns: repeat(1, minmax(0, 1fr));">
             <div class="boxed grid-item">
                 <div class="boxed bg-secondary title-menu-el-recipes">Norimberga</div>
-                <div class="boxed bg-primary word-nor-box"><div id="word-nor" style="padding: 10px;">Clicca "Prossimo" per iniziare</div></div>
+                <div class="boxed bg-primary word-nor-box">
+                    <div id="word-nor" style="padding: 10px;">Clicca "Prossimo" per iniziare</div>
+                </div>
                 <div class="boxed bg-secondary jud-nor-box">Sopravvalutato? Sottovalutato? O giustamente valutato?</div>
                 <div class="grid-item-btns" style="margin-bottom: 10px;">
                     <div class="boxed wide-btn " style="padding-right: 0" onclick="getNewWord()">Prossimo</div>
@@ -47,8 +66,12 @@
             <div class="boxed grid-item">
                 <div class="boxed bg-secondary title-menu-el-recipes">Categorie</div>
                 <div class="" style="margin-top: 10px;">
-                    <div class="boxed bg-secondary title-menu-el-recipes" onclick="changeFilename('./words.csv')">Calciatori serie A</div>
-                    <div class="boxed bg-secondary title-menu-el-recipes" onclick="changeFilename('./citta.csv')">Capitali europee</div>
+                    <?php
+                    foreach ($cat as $c) { ?>
+                        <div class="cat-nor boxed bg-secondary title-menu-el-recipes wide-btn"
+                            onclick="changeFilename('<?php echo $c->path?>')"><?php echo $c->name?></div>
+                    <?php }
+                    ?>
                 </div>
             </div>
             <div class="boxed grid-item">
@@ -93,8 +116,9 @@
                 <div class="boxed bg-secondary title-menu-el-recipes">?</div>
                 <div class="boxed bg-secondary istr-nor-box">
                     <div>
-                        Il gioco "Norimberga" è direttamente ispirato al podcast "Pendolino" di Ultimo Uomo. 
-                        Il formato del gioco riprende lo spirito del podcast, offrendo ai giocatori la possibilità di esprimere le proprie opinioni in modo divertente e coinvolgente
+                        Il gioco "Norimberga" è direttamente ispirato al podcast "Pendolino" di Ultimo Uomo.
+                        Il formato del gioco riprende lo spirito del podcast, offrendo ai giocatori la possibilità di
+                        esprimere le proprie opinioni in modo divertente e coinvolgente
                     </div>
                 </div>
             </div>

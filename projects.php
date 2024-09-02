@@ -13,13 +13,12 @@
                 <div class="justify-between w-full">
                     <img src="/media/img/easy_counter_logo.png" width=100 height=100 class="" />
                     <div class="w-full">
-                        <p>If you just need to count something, <br>here's your app.<br><br>
-                            
+                        <p>If you just need to count something, <br>here's your app.<br>Available for Android.<br>
+
                         </p>
                         <div class="grid-item-btns">
-                            <a href="/apps/EasyCounter.apk"
-                                class="boxed square-btn">
-                                <img src="/media/img/arrow.png" width=50 height=50 />
+                            <a href="/apps/EasyCounter.apk" class="boxed square-btn">
+                                <img src="/media/img/arrow.png" style="rotate: 90deg;" width=50 height=50 />
                             </a>
                             <div class="boxed square-btn">
                                 <img src="/media/img/info.png" width=50 height=50 />
@@ -29,31 +28,31 @@
                 </div>
             </div>
             <?php /*<div class="boxed grid-item">
-               <h2>Football stats</h2>
-               <div>
-                   <img src="/media/img/fs1.png" width=100 height=100 class=""/>
-                   <div>
-                       <p>A collection of football stats, starting<br> from the 2023/2024
-                               season.<br><br>
-                       </p>
-                       <div class="grid-item-btns">
-                           <a href="/fs/"
-                               class="boxed square-btn">
-                               <img src="/media/img/arrow.png" width=50 height=50/>
-                           </a>
-                           <div class="boxed square-btn">
-                               <img src="/media/img/info.png" width=50 height=50/>
-                           </div>   
-                       </div>
-                   </div>
-               </div>
-           </div>*/ ?>
+     <h2>Football stats</h2>
+     <div>
+         <img src="/media/img/fs1.png" width=100 height=100 class=""/>
+         <div>
+             <p>A collection of football stats, starting<br> from the 2023/2024
+                     season.<br><br>
+             </p>
+             <div class="grid-item-btns">
+                 <a href="/fs/"
+                     class="boxed square-btn">
+                     <img src="/media/img/arrow.png" width=50 height=50/>
+                 </a>
+                 <div class="boxed square-btn">
+                     <img src="/media/img/info.png" width=50 height=50/>
+                 </div>   
+             </div>
+         </div>
+     </div>
+ </div>*/ ?>
             <div class="boxed grid-item">
                 <h2>Recipes</h2>
                 <div class="justify-between w-full">
                     <img src="/media/img/r.png" width=100 height=100 class="" />
                     <div class="w-full">
-                        <p>A collection of my favourite recipes. <br><br><br>
+                        <p>A collection of my favourite recipes. WIP<br><br><br>
                         </p>
                         <div class="grid-item-btns">
                             <a href="/recipes/" class="boxed square-btn">
@@ -95,7 +94,7 @@
                         </p>
                         <div class="grid-item-btns">
                             <a href="/apps/FootballHeaders.apk" class="boxed square-btn" download>
-                                <img src="/media/img/arrow.png" width=50 height=50 />
+                                <img src="/media/img/arrow.png" style="rotate: 90deg;" width=50 height=50 />
                             </a>
                             <div class="boxed square-btn">
                                 <img src="/media/img/info.png" width=50 height=50 />
@@ -107,14 +106,15 @@
             <div class="boxed grid-item">
                 <h2>Norimberga</h2>
                 <div class="justify-between w-full">
-                    <img src="/media/img/easy_counter_logo.png" width=100 height=100 class="" />
+                    <img src="/media/img/norimberga.jpg" width=100 height=100 class="" />
                     <div class="w-full">
-                        <p><br><br><br>
-                            
+                        <p>
+                            Norimberga is a debate and persuasion game for 3 or more players, inspired by the podcast
+                            "Pendolino" by "Ultimo Uomo".<br>
+                            Overrated, underrated, or fairly rated?
                         </p>
                         <div class="grid-item-btns">
-                            <a href="/norimberga/"
-                                class="boxed square-btn">
+                            <a href="/norimberga/" class="boxed square-btn">
                                 <img src="/media/img/arrow.png" width=50 height=50 />
                             </a>
                             <div class="boxed square-btn">

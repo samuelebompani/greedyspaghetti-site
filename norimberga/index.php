@@ -29,16 +29,19 @@
             const word = document.getElementById("word-nor");
             alreadyUsed = []
             word.innerHTML = 'Clicca "Prossima" per iniziare'
+            const search = document.getElementById("question")
+            search.href = ""
         }
 
         async function getNewWord() {
             const word = document.getElementById("word-nor");
-            if()
-            const names = await fetch('./words/'+fileName, { mode: 'no-cors' })
-                .then(response => {if(response.status !== 200) return ""; return response.text()})
-                .then(data => data)
-                .catch(error => console.error(error));
-            if(names === ""){
+            let names = ""
+            if (/[a-z]*\.csv/.test(fileName))
+                names = await fetch('./words/' + fileName, { mode: 'no-cors' })
+                    .then(response => { if (response.status !== 200) return ""; return response.text() })
+                    .then(data => data)
+                    .catch(error => console.error(error));
+            if (names === "") {
                 word.innerHTML = "File non valido"
                 return
             }
@@ -52,7 +55,10 @@
                 rand = getRandomArbitrary(0, namesList.length)
             }
             alreadyUsed.push(rand)
-            word.innerHTML = namesList[rand]
+            const wExtracted = namesList[rand]
+            word.innerHTML = wExtracted
+            const search = document.getElementById("question")
+            search.href = "https://duckduckgo.com/?q=" + wExtracted
         }
     </script>
     <?php
@@ -71,7 +77,9 @@
         new Category("Calciatori serie A", "words.csv"),
         new Category("Capitali europee", "citta.csv"),
         new Category("Registi", "directors.csv"),
-        new Category("Mani Pulite", "../index.php")
+        new Category("Mani Pulite", "manipulite.csv"),
+        new Category("Nazioni", "countries.csv"),
+
     ]
         ?>
 
@@ -89,6 +97,9 @@
                 <div class="boxed bg-secondary jud-nor-box">Sopravvalutato? Sottovalutato? O giustamente valutato?</div>
                 <div class="grid-item-btns" style="margin-bottom: 10px;">
                     <div class="boxed wide-btn " style="padding-right: 0" onclick="reset()">Reset</div>
+                    <a href="" target="_blank" id="question">
+                        <div class="boxed wide-btn" style="padding-right: 0">Info</div>
+                    </a>
                     <div class="boxed wide-btn " style="padding-right: 0" onclick="getNewWord()">Prossima</div>
                 </div>
             </div>

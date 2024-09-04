@@ -13,7 +13,7 @@
             return Math.floor(Math.random() * (max - min) + min);
         }
 
-        let fileName = './food.csv'
+        let fileName = 'food.csv'
         let alreadyUsed = []
 
         function changeFilename(newName) {
@@ -32,12 +32,17 @@
         }
 
         async function getNewWord() {
-            const names = await fetch(fileName, { mode: 'no-cors' })
-                .then(response => response.text())
+            const word = document.getElementById("word-nor");
+            if()
+            const names = await fetch('./words/'+fileName, { mode: 'no-cors' })
+                .then(response => {if(response.status !== 200) return ""; return response.text()})
                 .then(data => data)
                 .catch(error => console.error(error));
+            if(names === ""){
+                word.innerHTML = "File non valido"
+                return
+            }
             const namesList = names.split(",")
-            const word = document.getElementById("word-nor");
             if (alreadyUsed.length === namesList.length) {
                 word.innerHTML = 'Parole terminate! Clicca "reset" per ricominciare'
                 return
@@ -62,10 +67,11 @@
         }
     }
     $cat = [
-        new Category("Cibo italiano", './food.csv'),
-        new Category("Calciatori serie A", "./words.csv"),
-        new Category("Capitali europee", "./citta.csv"),
-        new Category("Registi", "./directors.csv")
+        new Category("Cibo italiano", 'food.csv'),
+        new Category("Calciatori serie A", "words.csv"),
+        new Category("Capitali europee", "citta.csv"),
+        new Category("Registi", "directors.csv"),
+        new Category("Mani Pulite", "../index.php")
     ]
         ?>
 
@@ -91,7 +97,7 @@
                 <div class="cat-nor-box">
                     <?php
                     foreach ($cat as $c) { ?>
-                        <div class="cat-nor boxed bg-secondary title-menu-el-recipes wide-btn" style="<?php if ($c->path == "./food.csv")
+                        <div class="cat-nor boxed bg-secondary title-menu-el-recipes wide-btn" style="<?php if ($c->path == "food.csv")
                             echo "background-color: #ffed5d"; ?>" id="<?php echo $c->path ?>"
                             onclick="changeFilename('<?php echo $c->path ?>')">
                             <?php echo $c->name ?>

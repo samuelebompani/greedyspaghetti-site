@@ -211,7 +211,7 @@
                 </div>
                 <div class="marginy-10">
                     <a href="https://buymeacoffee.com/greedyspaghetti" target="_blank" >
-                        <img src="/media/img/coffee.png" width=50 height=50 class=""/>
+                        <img src="/media/img/coffee.png" width=38 height=50 class=""/>
                     </a>
                 </div>
             </div>

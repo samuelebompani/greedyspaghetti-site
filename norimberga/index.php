@@ -31,6 +31,32 @@
             word.innerHTML = 'Clicca "Prossima" per iniziare'
             const search = document.getElementById("question")
             search.href = ""
+            disableInfoBtn()
+        }
+
+        function disableInfoBtn() {
+            const searchBtn = document.getElementById("question")
+            const searchImg = document.getElementById("searchImg")
+            searchBtn.style.pointerEvents = "none";
+            searchBtn.style.opacity = "30%";
+            searchImg.classList.add("inactive-button")
+            searchImg.classList.remove("button")
+            //searchImg.style.border = "0"
+            
+
+        }
+
+        function activateInfoBtn() {
+            const searchBtn = document.getElementById("question")
+            const searchImg = document.getElementById("searchImg")
+            searchBtn.style.pointerEvents = "auto";
+            //searchImg.style.border = "solid black";
+            //searchImg.style.borderLeft = "0";
+            //searchImg.style.borderTop = "0";
+            //searchImg.style.borderRadius = "999px"
+            searchImg.classList.add("button")
+            searchImg.classList.remove("inactive-button")
+            searchBtn.style.opacity = "100%";
         }
 
         async function getNewWord() {
@@ -48,6 +74,7 @@
             const namesList = names.split(",")
             if (alreadyUsed.length === namesList.length) {
                 word.innerHTML = 'Parole terminate! Clicca "reset" per ricominciare'
+                disableInfoBtn()
                 return
             }
             let rand = getRandomArbitrary(0, namesList.length)
@@ -58,6 +85,7 @@
             const wExtracted = namesList[rand]
             word.innerHTML = wExtracted
             const search = document.getElementById("question")
+            activateInfoBtn()
             search.href = "https://duckduckgo.com/?q=" + wExtracted
         }
     </script>
@@ -78,8 +106,7 @@
         new Category("Capitali europee", "citta.csv"),
         new Category("Registi", "directors.csv"),
         new Category("Mani Pulite", "manipulite.csv"),
-        new Category("Nazioni", "countries.csv"),
-
+        new Category("Nazioni", "countries.csv")
     ]
         ?>
 
@@ -95,10 +122,13 @@
                     <div id="word-nor" style="padding: 10px;">Clicca "Prossima" per iniziare</div>
                 </div>
                 <div class="boxed bg-secondary jud-nor-box">Sopravvalutato? Sottovalutato? O giustamente valutato?</div>
-                <div class="grid-item-btns" style="margin-bottom: 10px;">
+                <div class="grid-item-btns" style="margin-bottom: 10px;align-items: center;">
                     <div class="boxed wide-btn " style="padding-right: 0" onclick="reset()">Reset</div>
-                    <a href="" target="_blank" id="question">
-                        <div class="boxed wide-btn" style="padding-right: 0">Info</div>
+                    <?php /*<a href="" target="_blank" id="question">
+                   <div class="boxed wide-btn" style="padding-right: 0; background: #999;" id="question-btn">Info</div>
+               </a>*/ ?>
+                    <a href="" target="_blank" id="question" style="pointer-events: none;opacity:30%;">
+                        <img src="../media/img/duck.png" width="60" id="searchImg" style="border-radius:9999px;"/>
                     </a>
                     <div class="boxed wide-btn " style="padding-right: 0" onclick="getNewWord()">Prossima</div>
                 </div>

@@ -55,6 +55,29 @@ a {
     border-radius: 9px;
 }
 
+.button {
+    border: 2px;
+    border-right-width: 5px;
+    border-bottom-width: 5px;
+    border-style: solid;
+    border-color: var(--black);
+}
+
+.inactive-button {
+    border: 0;
+    margin-top: 7px;
+    margin-left: 7px;
+}
+
+.button:active {
+    transform: translateY(3px);
+    transform: translateX(3px);
+    margin-top: 3px;
+    margin-left: 3px;
+    border-right-width: 2px;
+    border-bottom-width: 2px;
+}
+
 .justify-between {
     justify-content: space-between;
 }

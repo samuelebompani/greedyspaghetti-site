@@ -57,7 +57,7 @@
                             <a href="/recipes/" class="boxed square-btn">
                                 <img src="/media/img/arrow.png" width=50 height=50 />
                             </a>
-                            <div class="boxed square-btn">
+                            <div class="boxed square-btn useless-btn">
                                 <img src="/media/img/info.png" width=50 height=50 />
                             </div>
                         </div>
@@ -76,7 +76,7 @@
                             <a href="http://eepurl.com/hOhaeX" class="boxed square-btn">
                                 <img src="/media/img/arrow.png" width=50 height=50 />
                             </a>
-                            <div class="boxed square-btn">
+                            <div class="boxed square-btn useless-btn">
                                 <img src="/media/img/info.png" width=50 height=50 />
                             </div>
                         </div>
@@ -95,7 +95,7 @@
                             <a href="/apps/FootballHeaders.apk" class="boxed square-btn" download>
                                 <img src="/media/img/arrow.png" style="rotate: 90deg;" width=50 height=50 />
                             </a>
-                            <div class="boxed square-btn">
+                            <div class="boxed square-btn useless-btn">
                                 <img src="/media/img/info.png" width=50 height=50 />
                             </div>
                         </div>
@@ -116,7 +116,7 @@
                             <a href="/norimberga/" class="boxed square-btn">
                                 <img src="/media/img/arrow.png" width=50 height=50 />
                             </a>
-                            <div class="boxed square-btn">
+                            <div class="boxed square-btn useless-btn">
                                 <img src="/media/img/info.png" width=50 height=50 />
                             </div>
                         </div>

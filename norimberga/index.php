@@ -41,8 +41,6 @@
             searchBtn.style.opacity = "30%";
             searchImg.classList.add("inactive-button")
             searchImg.classList.remove("button")
-            //searchImg.style.border = "0"
-            
 
         }
 
@@ -50,10 +48,6 @@
             const searchBtn = document.getElementById("question")
             const searchImg = document.getElementById("searchImg")
             searchBtn.style.pointerEvents = "auto";
-            //searchImg.style.border = "solid black";
-            //searchImg.style.borderLeft = "0";
-            //searchImg.style.borderTop = "0";
-            //searchImg.style.borderRadius = "999px"
             searchImg.classList.add("button")
             searchImg.classList.remove("inactive-button")
             searchBtn.style.opacity = "100%";
@@ -125,7 +119,8 @@
                 <div class="grid-item-btns" style="margin-bottom: 10px;align-items: center;">
                     <div class="boxed wide-btn " style="padding-right: 0" onclick="reset()">Reset</div>
                     <a href="" target="_blank" id="question" style="pointer-events: none;opacity:30%;">
-                        <img src="../media/img/duck.png" width="60" id="searchImg" style="border-radius:9999px;" class="inactive-button"/>
+                        <img src="../media/img/duck.png" width="60" id="searchImg" style="border-radius:9999px;"
+                            class="inactive-button" />
                     </a>
                     <div class="boxed wide-btn " style="padding-right: 0" onclick="getNewWord()">Prossima</div>
                 </div>
@@ -203,6 +198,21 @@
                         Per qualsiasi proposta o richiesta, puoi contattarmi via email a samuele [at]
                         greedyspaghetti [dot] com.
                     </div>
+                </div>
+            </div>
+            <div class="boxed grid-item">
+                <div class="boxed bg-secondary title-menu-el-recipes">Supportami</div>
+                <div class="boxed bg-secondary istr-nor-box">
+                    <div>
+                        Se vuoi darmi una mano a creare nuovi progetti e migliorare quelli esistenti, puoi offrirmi un
+                        caffè su Buy Me a Coffee. Ogni piccolo contributo fa la differenza. Grazie per il tuo sostegno!
+                    </div>
+                    
+                </div>
+                <div class="marginy-10">
+                    <a href="https://buymeacoffee.com/greedyspaghetti" target="_blank" >
+                        <img src="/media/img/coffee.png" width=50 height=50 class=""/>
+                    </a>
                 </div>
             </div>
         </div>

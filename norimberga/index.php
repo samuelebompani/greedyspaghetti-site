@@ -124,11 +124,8 @@
                 <div class="boxed bg-secondary jud-nor-box">Sopravvalutato? Sottovalutato? O giustamente valutato?</div>
                 <div class="grid-item-btns" style="margin-bottom: 10px;align-items: center;">
                     <div class="boxed wide-btn " style="padding-right: 0" onclick="reset()">Reset</div>
-                    <?php /*<a href="" target="_blank" id="question">
-                   <div class="boxed wide-btn" style="padding-right: 0; background: #999;" id="question-btn">Info</div>
-               </a>*/ ?>
                     <a href="" target="_blank" id="question" style="pointer-events: none;opacity:30%;">
-                        <img src="../media/img/duck.png" width="60" id="searchImg" style="border-radius:9999px;"/>
+                        <img src="../media/img/duck.png" width="60" id="searchImg" style="border-radius:9999px;" class="inactive-button"/>
                     </a>
                     <div class="boxed wide-btn " style="padding-right: 0" onclick="getNewWord()">Prossima</div>
                 </div>

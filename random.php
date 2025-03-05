@@ -55,7 +55,7 @@
                         <iframe id="brianza-iframe" class="iframe-boxed">
                         </iframe>
                         <div class="grid-item-btns">
-                            <div class="boxed wide-btn" onClick="newRandomPlace()">
+                            <div class="boxed wide-btn" onClick="newRandomPlace()" style="margin-top: 5px;">
                                 Refresh
                             </div>
                         </div>
@@ -83,7 +83,7 @@
                         <div id="color-box" class="iframe-boxed">
                         </div>
                         <div class="grid-item-btns">
-                            <div class="boxed wide-btn" onClick="newColor()" style="margin-top: 5px;">
+                            <div class="boxed wide-btn" onClick="newColor()" style="margin-top: 9px;">
                                 Refresh
                             </div>
                         </div>

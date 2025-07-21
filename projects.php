@@ -123,6 +123,25 @@
                     </div>
                 </div>
             </div>
+            <div class="boxed grid-item">
+                <h2>Trattative in corso</h2>
+                <div class="justify-between w-full">
+                    <img src="/game/index.png" width=100 height=100 class="" />
+                    <div class="w-full">
+                        <p>
+                            A little platform game I'm developing. You can try it out here!
+                        </p>
+                        <div class="grid-item-btns">
+                            <a href="/game/" class="boxed square-btn">
+                                <img src="/media/img/arrow.png" width=50 height=50 />
+                            </a>
+                            <div class="boxed square-btn useless-btn">
+                                <img src="/media/img/info.png" width=50 height=50 />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <?php include "./components/footer.php"; ?>

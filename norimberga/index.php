@@ -125,7 +125,7 @@
                     <div class="boxed wide-btn " style="padding-right: 0" onclick="getNewWord()">Prossima</div>
                 </div>
             </div>
-            <div class="boxed grid-item">
+            <div class="boxed grid-item" style="align-content: center;">
                 <div class="boxed bg-secondary title-menu-el-recipes">Categorie</div>
                 <div class="cat-nor-box">
                     <?php

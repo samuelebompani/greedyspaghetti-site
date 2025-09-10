@@ -54,8 +54,8 @@
                     <div style="width: 100%;">
                         <iframe id="brianza-iframe" class="iframe-boxed">
                         </iframe>
-                        <div class="grid-item-btns">
-                            <div class="boxed wide-btn" onClick="newRandomPlace()" style="margin-top: 5px;">
+                        <div class="grid-item-btns" style="margin-top: 5px;">
+                            <div class="boxed wide-btn" onClick="newRandomPlace()">
                                 Refresh
                             </div>
                         </div>
@@ -68,8 +68,8 @@
                     <div style="width: 100%;">
                         <iframe id="cats-iframe" class="iframe-boxed">
                         </iframe>
-                        <div class="grid-item-btns">
-                            <div class="boxed wide-btn" onClick="newCat()" style="margin-top: 5px;">
+                        <div class="grid-item-btns" style="margin-top: 5px;">
+                            <div class="boxed wide-btn" onClick="newCat()">
                                 Refresh
                             </div>
                         </div>
@@ -82,8 +82,8 @@
                     <div style="width: 100%;">
                         <div id="color-box" class="iframe-boxed">
                         </div>
-                        <div class="grid-item-btns">
-                            <div class="boxed wide-btn" onClick="newColor()" style="margin-top: 9px;">
+                        <div class="grid-item-btns" style="margin-top: 9px;">
+                            <div class="boxed wide-btn" onClick="newColor()">
                                 Refresh
                             </div>
                         </div>
@@ -96,8 +96,8 @@
                     <div style="width: 100%;">
                         <iframe id="wiki-iframe" class="iframe-boxed">
                         </iframe>
-                        <div class="grid-item-btns">
-                            <div class="boxed wide-btn" onClick="newWiki()" style="margin-top: 5px;">
+                        <div class="grid-item-btns" style="margin-top: 5px;">
+                            <div class="boxed wide-btn" onClick="newWiki()">
                                 Refresh
                             </div>
                         </div>

@@ -9,9 +9,10 @@
 
 .home-page {
     min-height: 80vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    place-content: center;
+    place-items: center;
+    gap: 40px
 }
 
 

@@ -18,18 +18,6 @@
                 </div>
             </div>
             <div class="boxed grid-item">
-                <h2>Buy me a coffee</h2>
-                <div>
-                If you enjoy exploring my work or find any of my projects inspiring or helpful, consider buying me a coffee! Your support helps fuel my creativity and keeps me motivated to build, experiment, and share even more.
-                    
-                </div>
-                <div class="marginy-10">
-                    <a href="https://buymeacoffee.com/greedyspaghetti" target="_blank">
-                        <img src="/media/img/coffee.png" width=38 height=50 class=""/>
-                    </a>
-                </div>
-            </div>
-            <div class="boxed grid-item">
                 <h2>Why Greedy Spaghetti?</h2>
                 <p>
                     Since I don't really have an answer for this question, I asked ChatGPT:<br><br>

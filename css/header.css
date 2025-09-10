@@ -67,7 +67,7 @@
     background-color: var(--secondary-dark);
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 850px) {
     .burger-menu {
         display: none;
         flex-direction: column;

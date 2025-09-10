@@ -14,13 +14,6 @@
     align-items: center;
 }
 
-.header {
-    visibility: hidden;
-    opacity: 0;
-    transition-property: opacity;
-    transition-duration: 2s;
-}
-
 
 @keyframes animate {
     0% {

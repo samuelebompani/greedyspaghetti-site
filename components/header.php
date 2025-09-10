@@ -30,6 +30,7 @@
         Greedy Spaghetti
     </a>
     <div class="header-menu">
+        <a href="/works.php" class="boxed">works</a>
         <a href="/projects.php" class="boxed">projects</a>
         <a href="/random.php" class="boxed">random</a>
         <a href="/about.php" class="boxed">about</a>
@@ -41,6 +42,7 @@
     </div>
 </div>
 <div class="burger-menu" id="burger-menu">
+    <a href="/works.php" class="boxed">works</a>
     <a href="/projects.php" class="boxed">projects</a>
     <a href="/random.php" class="boxed">random</a>
     <a href="/about.php" class="boxed">about</a>

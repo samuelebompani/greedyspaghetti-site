@@ -22,7 +22,7 @@
                 [
                     "title" => "Recipes",
                     "img" => "/media/img/r.png",
-                    "desc" => "A collection of my favourite recipes. WIP",
+                    "desc" => "WIP. A collection of my favourite recipes.",
                     "link" => "/recipes/",
                     "btn" => "EN/IT"
                 ],
@@ -62,7 +62,7 @@
                 [
                     "title" => "Trattative in corso",
                     "img" => "/game/index.png",
-                    "desc" => "A little platform game I'm developing. You can try it out here!",
+                    "desc" => "WIP. A little platform game I'm developing. You can try it out here!",
                     "link" => "/game/",
                     "btn" => "IT"
                 ]

@@ -5,6 +5,7 @@
         var btnCenter = document.getElementById("header-btn-center");
         var btnBottom = document.getElementById("header-btn-bottom");
         var menu = document.querySelector(".header-btn");
+        var body = document.querySelector("body");
         if (x.style.display === "flex") {
             x.style.display = "none";
             btnCenter.style.visibility = "visible";
@@ -13,6 +14,7 @@
             btnTop.style.marginBottom = "4px";
             btnBottom.style.rotate = "0deg";
             btnBottom.style.marginTop = "4px";
+            body.style.overflowY = "auto";
         } else {
             x.style.display = "flex";
             btnCenter.style.visibility = "hidden";
@@ -22,6 +24,7 @@
             menu.style.gap = "0px";
             btnBottom.style.rotate = "-45deg";
             btnBottom.style.marginTop = "-2px";
+            body.style.overflowY = "hidden";
         }
     }
 </script>

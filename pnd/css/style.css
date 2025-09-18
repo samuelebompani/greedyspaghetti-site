@@ -163,10 +163,15 @@ input[type="text"] {
         font-size: 24px;
     }
 
+    .q-body {
+        font-size: 16px;
+    }
+
     .q-container {
         width: 80%;
         padding: 2% 4%;
         margin-top: 5%;
+        font-size: 16px;
     }
 
     .submit-btn {

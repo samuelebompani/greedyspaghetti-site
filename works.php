@@ -44,6 +44,14 @@
                     "color" => "#b68881",
                     "btn" => "PHP",
                 ],
+                [
+                    "title" => "Fimart",
+                    "img" => "/media/img/works/fimart.png",
+                    "desc" => "Developed the website for Fimart, a fintech ecosystem that brings the art market into the digital age. The platform introduces a blockchain-based financial marketplace where artworks can be tokenized, tracked, and traded, enabling galleries, collectors, and investors to monetize and invest in art through a transparent and accessible digital infrastructure.",
+                    "link" => "https://fimart.it",
+                    "color" => "#589ced",
+                    "btn" => "Astro JS",
+                ]
             ];
 
             // Rendering dei progetti

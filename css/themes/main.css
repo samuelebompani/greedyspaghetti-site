@@ -148,7 +148,7 @@ a {
 }
 
 .large-button {
-    width: 80px !important;
+    width: 100px !important;
     display: grid;
     place-content: center;
 }
